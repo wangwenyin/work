@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="BIM大赛、斯维尔、广州大学、服务网站、建设行业、BIM">
+    <meta name="description" content="BIM大赛(2019)。大赛促进BIM技术在建筑设计行业的应用，引起建筑企业对BIM技术人才的关注和培养，吸引院校建筑设计相关院校学生对BIM技术的学习。">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>第二届粤港澳高校学生BIM-CIM创新大赛网络投票评选“斯维尔杯”BIM-CIM创新大赛网络投票评选</title>
+</head>
+<body>
+    <div id="warpper" class="warpper">
+        <div class="banner">
+            <img src="./images/banner.png" alt="banner">
+        </div>
+        <div class="content">
+            <div class="content-top">
+                <div class="cooperator-logos">
+                    <img src="./images/logo-ths.png" alt="logo-ths"><img src="./images/logo-cooperator.png" alt="logo-cooperator">
+                </div>
+                <div class="vote-time"><span>投票时间：</span><span>2019年11月4日 09:00 至 2019年11月20日 24:00</span></div>
+                <ul class="data-statistics">
+                    <li><span>825</span><span>参赛数</span></li>
+                    <li><span>23564</span><span>投票数</span></li>
+                    <li><span>25365121</span><span>访问量</span></li>
+                </ul>
+            </div>
+            <div class="cards-box">
+                <div class="search-box">
+                    <input type="text" placeholder="请输入作品编号或名称">
+                    <button></button>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img src="./images/work-default.jpg" alt="work-default">
+                        <div class="other-info">
+                            <div class="title-of-work">GX1212  作品名称展示</div>
+                            <div class="likes">15454212</div>
+                            <div class="vote-btn">投票</div>
+                        </div>
+                        <div class="num">1号</div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/work-default.jpg" alt="work-default">
+                        <div class="other-info">
+                            <div class="title-of-work">GX1212  作品名称展示</div>
+                            <div class="likes">15454212</div>
+                            <div class="vote-btn">投票</div>
+                        </div>
+                        <div class="num">2号</div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/work-default.jpg" alt="work-default">
+                        <div class="other-info">
+                            <div class="title-of-work">GX1212  作品名称展示</div>
+                            <div class="likes">15454212</div>
+                            <div class="vote-btn">投票</div>
+                        </div>
+                        <div class="num">3号</div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/work-default.jpg" alt="work-default">
+                        <div class="other-info">
+                            <div class="title-of-work">GX1212  作品名称展示</div>
+                            <div class="likes">15454212</div>
+                            <div class="vote-btn">投票</div>
+                        </div>
+                        <div class="num">4号</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="tabbar">
+            <li class="active"><a href="#">全部参赛</a></li>
+            <li><a href="./rank.html">当前排名</a></li>
+            <li><a href="./activity-rules.html">活动规则</a></li>
+        </ul>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script>
+   var cards = $('.cards-box .card');
+   cards.click(function() {
+       window.location.href = './works-detail.html'
+   })
+</script>
+</html>

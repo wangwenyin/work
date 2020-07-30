@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+#process a, #register-info a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+#process a:hover, #register-info a:hover {
+    text-decoration: underline;
+    transform: scale(1.08);
+}
+
+#register-info a {
+    font-size: 16px;
+}
+
+#register-info {
+    display: flex;
+    align-items: center;
+    width: 900px;
+    height: 278px;
+    margin: 200px auto;
+    background-image: url(./register_info_bg.png);
+    background-size: cover;
+    .toRegister {
+        width: 100%;
+        margin-top: -32px;
+        a {
+            &:first-child {
+                margin-left: 14px;
+            }
+            &:last-child {
+                margin-left: 70px;
+            }
+        }
+    }
+}
+
+#process a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#process {
+    position: relative;
+    width:1032px;
+    height:450px;
+    margin: 100px auto;
+    background-color:rgba(255,255,255,.3);
+    background-image: url(./process_bg.png);
+    background-size: cover;
+    overflow: hidden;
+    .first-stage-date {
+        display: flex;
+        justify-content: space-between;
+        float: right;
+        width: 65%;
+        margin-top: 56px;
+        margin-right: 50px;
+        li {
+            width: 121px;
+            font-size: 16px;
+            color: #666;
+            margin-left: 24px;
+            letter-spacing: -1px;
+        }
+    }
+    .first-stage {
+        display: flex;
+        justify-content: space-between;
+        float: right;
+        width: 75%;
+        margin-top: 16px;
+        margin-right: 64px;
+        li {
+            display: flex;
+            align-items: center;
+            width: 100px;
+            text-align: center;
+            &:first-child {
+                margin-left: -15px;
+            }
+        }
+    }
+    .online-register {
+        float: left;
+        width: 100%;
+        margin: 32px 0;
+        padding-left: 18px;
+        text-align: left;
+    }
+    .register-date {
+        position: absolute;
+        top: 57%;
+        left: 12px;
+        font-size: 16px;
+        color: #666;
+    }
+    .second-stage {
+        display: flex;
+        justify-content: space-between;
+        float: right;
+        width: 80%;
+        margin-top: 8px;
+        margin-right: 22px;
+        li {
+            display: flex;
+            align-items: center;
+            width: 100px;
+            text-align: center;
+            &:first-child {
+                margin-left: -4px;
+            }
+            &:nth-child(2){
+                margin-left: 32px;
+            }
+            &:nth-child(6){
+                margin-right: 10px;
+            }
+        }
+    }
+    .second-stage-date {
+        display: flex;
+        justify-content: space-between;
+        float: right;
+        width: 70%;
+        margin-top: 22px;
+        margin-right: 16px;
+        li {
+            width: 121px;
+            font-size: 16px;
+            color: #666;
+            letter-spacing: -1px;
+        }
+    }
+}

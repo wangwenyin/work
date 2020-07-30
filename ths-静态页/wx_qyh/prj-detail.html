@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./dist/style/weui.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="weui-tab" id="tab">
+        <div class="weui-navbar">
+            <div class="weui-navbar__item">项目概况</div>
+            <div class="weui-navbar__item">办理意见</div>
+            <div class="weui-navbar__item">成果文件</div>
+        </div>
+        <div class="weui-tab__panel">
+            <div class="weui-tab__content">
+                <ul class="prj-info-box">
+                    <li><span data-key="prjName">项目名称</span><span></span></li>
+                    <li><span data-key="applyTime">申报时间</span><span></span></li>
+                    <li><span data-key="approvedItem">审批事项</span><span></span></li>
+                    <li><span data-key="ponderance">缓急程度</span><span></span></li>
+                    <li><span data-key="applyUnit">申报单位</span><span></span></li>
+                </ul>
+            </div>
+            <div class="weui-tab__content suggest-box">
+                <div class="review-box">
+                    <div class="title">
+                        <span>工程师发起审批</span><span>李莉</span>
+                    </div>
+                    <div class="datetime">
+                        <span>时间：</span><span>2019/7/15  14:25 至 2019/7/15  14:50</span>
+                    </div>
+                    <div class="content">
+                        <div>行政审批是行政审核和行政批准的合称。行政审核又称行政认可，其实质是行政机关对行政相对人行为合法性、真实性进行审查、认可，实践中经常表现为盖公章；行政批准又称行政许可，其实质是行政主体同意特定相对人取得某种法律资格或实施某种行为，实践中表现为许可证的发放,实践中表现为许发顺丰</div>
+                        <span class="more">更多</span>
+                    </div>
+                </div>
+                <div class="review-box">
+                    <div class="title">
+                        <span>总工审批</span><span>严刚</span>
+                    </div>
+                    <div class="datetime">
+                        <span>时间：</span><span>2019/7/16  9:15 至 2019/7/16  15:20</span>
+                    </div>
+                    <div class="content">
+                        核减金额合理，同意。
+                    </div>
+                </div>
+                <div class="review-box">
+                    <div class="title">
+                        <span>部长审批</span><span>杨悦</span>
+                    </div>
+                    <div class="datetime">
+                        <span>时间：</span><span>2019/7/16  9:15 至 2019/7/16  15:20</span>
+                    </div>
+                    <div class="content">
+                        同意。
+                    </div>
+                </div>
+                <div class="review-box">
+                    <div class="title">
+                        <span>主任审批</span><span>刘宇航</span>
+                    </div>
+                    <div class="datetime">
+                        <span>时间：</span><span>2019/7/16  9:15 至 2019/7/16  15:20</span>
+                    </div>
+                    <div class="content">
+                        同意。
+                    </div>
+                </div>
+                <textarea name="suggest" id="suggest" placeholder="请填写办理意见"></textarea>
+                <div class="btn-box">
+                    <div>驳回</div>
+                    <div>提交</div>
+                </div>
+            </div>
+            <div class="weui-tab__content">
+                <div class="tab-content-header">
+                    <span>成果文件</span><span>文件类型</span>
+                </div>
+                <ul class="file-list-box">
+                    <li><span>福田区石厦小学建设工程评审意见书</span><span>doc</span></li>
+                    <li><span>福田区石厦小学建设工程评概算汇总表</span><span>excel</span></li>
+                    <li><span>福田区石厦小学建设工程评概算批复审...</span><span>pdf</span></li>
+                    <li><span>福田区石厦小学建设工程评踏勘记录表</span><span>doc</span></li>
+                    <li><span>福田区石厦小学建设工程评现场踏勘记...</span><span>excel</span></li>
+                    <li><span>福田区石厦小学建设工程评踏勘记录表</span><span>doc</span></li>
+                    <li><span>福田区石厦小学建设工程评审意见书</span><span>doc</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./js/rem.js"></script>
+<script type="text/javascript" src="./dist/example/zepto.min.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.2.1/weui.min.js"></script>
+<script>
+    // tab切换
+    weui.tab('#tab',{
+        defaultIndex: 0,
+        onChange: function(index){
+            console.log(index);
+        }
+    });
+
+    var prjList = [
+        { 
+            prjName: '福田区梅花小学改造项目1',
+            prjInfo: {
+                prjName: '福田区梅花小学改造项目',
+                applyTime: '2019/7/22',
+                approvedItem: '概算',
+                ponderance: '急件',
+                applyUnit: '深圳市住建局'
+            },
+            suggest: {},
+            filelist: [
+                { name: '福田区石厦小学建设工程评审意见书', type: 'doc' },
+                { name: '福田区石厦小学建设工程评概算汇总表', type: 'excel' },
+                { name: '福田区石厦小学建设工程评概算批复审...', type: 'pdf' },
+                { name: '福田区石厦小学建设工程评踏勘记录表', type: 'doc' },
+                { name: '福田区石厦小学建设工程评现场踏勘记...', type: 'excel' },
+                { name: '福田区石厦小学建设工程评踏勘记录表', type: 'doc' },
+                { name: '福田区石厦小学建设工程评审意见书', type: 'doc' },
+            ]
+        },
+        { 
+            prjName: '福田区梅花小学改造项目2',
+            prjInfo: {
+                prjName: '福田区梅花小学改造项目',
+                applyTime: '2019/7/22',
+                approvedItem: '概算',
+                ponderance: '急件',
+                applyUnit: '深圳市住建局'
+            },
+            suggest: {},
+            file: {}
+        },
+        { 
+            prjName: '福田区梅花小学改造项目3',
+            prjInfo: {
+                prjName: '福田区梅花小学改造项目',
+                applyTime: '2019/7/22',
+                approvedItem: '概算',
+                ponderance: '急件',
+                applyUnit: '深圳市住建局'
+            },
+            suggest: {},
+            file: {}
+        },
+        { 
+            prjName: '福田区梅花小学改造项目4',
+            prjInfo: {
+                prjName: '福田区梅花小学改造项目',
+                applyTime: '2019/7/22',
+                approvedItem: '概算',
+                ponderance: '急件',
+                applyUnit: '深圳市住建局'
+            },
+            suggest: {},
+            file: {}
+        },
+        { 
+            prjName: '福田区梅花小学改造项目5',
+            prjInfo: {
+                prjName: '福田区梅花小学改造项目',
+                applyTime: '2019/7/22',
+                approvedItem: '概算',
+                ponderance: '急件',
+                applyUnit: '深圳市住建局'
+            },
+            suggest: {},
+            file: {}
+        }
+    ]
+
+    $('.prj-info-box li').each(function(index) {
+        var firstSpan = $(this).children().eq(0);
+        var key = firstSpan.data('key');
+        $(this).children().eq(1).html(prjList[0].prjInfo[key]);
+    })
+</script>

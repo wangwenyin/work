@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+body {
+  font-family: "SourceHanSansCN", "PingFang SC", "Microsoft YaHei", "Chinese Quote", "Helvetica Neue", sans-serif;
+  color: #fff;
+  font-size: 0.18rem;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+h2 {
+  font-weight: normal;
+}
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+input::placeholder {
+  color: #fff;
+  font: 0.14rem 'PingFang SC';
+}
+fieldset,
+img {
+  border: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  text-align: center;
+  border-collapse: collapse;
+}
+hr {
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #E4E4E4;
+  border-width: 1px 0;
+  clear: both;
+  height: 2px;
+  margin: 5px 0;
+  overflow: hidden;
+}
+.clearfix::before,
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}

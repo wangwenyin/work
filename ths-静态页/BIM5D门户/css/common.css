@@ -1,0 +1,24 @@
+.width_1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .width_1200 {
+        width: auto;
+    }
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-title {
+    color: #EEF5FF;
+}
+
+.ant-steps-item-process > .ant-steps-item-content > .ant-steps-item-description {
+    color: #EEF5FF;
+}

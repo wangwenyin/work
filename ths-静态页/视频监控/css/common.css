@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Microsoft YaHei", 微软雅黑, Helvetica, Arial;
+    min-width: 1220px;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0 none;
+    vertical-align: middle;
+}
+
+img,
+button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+input:-ms-clear {
+    display: none;
+}
+
+input[type='search']::-webkit-search-cancel-button {
+    display: none;
+}
+
+input,
+textarea {
+    -webkit-user-modify: read-write-plaintext-only;
+    outline: none;
+}
+
+button,
+input,
+textarea {
+    border: 0 none;
+}
+
+body,
+button,
+input,
+textarea,
+select,
+option,
+pre,
+optgroup {
+    line-height: 1.5;
+    font-family: "Microsoft YaHei", "微软雅黑", Helvetica, Arial;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 1903px;
+    font-size: 16px;
+    background: url(../img/bg.png) no-repeat;
+}
+
+.header{
+    width: 1877px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.gation{
+    margin-bottom: 26px;
+}
+
+.gatLeft{
+    margin-top: 18px;
+}
+
+.gatLeft span{
+    width: 310px;
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight:400;
+    font-size:22px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.gatRight{
+    margin-top: 32px;
+}
+
+.gatRight img{
+    cursor: pointer;
+    margin-right: 29px;
+}
+
+.navli{
+    font-weight:400;
+    font-size:22px;
+    color: #0FEBFF;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background: url(../img/navbg.png) no-repeat;
+    text-align: center;
+    margin-right: 16px;
+    cursor: pointer;
+    float: left;
+}
+
+.navli.opt,.navli:hover{
+    background: url(../img/navbgon.png) no-repeat;
+    color: #53FEC0;
+}
+
+.project{
+    height: 135px;
+    width: 460px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.projtxt1{
+    font-size:50px;
+    color: #FFFFFF;
+    font-weight:400;
+    margin-top: 4px;
+}
+
+.projtxt2{
+    width: 434px;
+    margin: 0 auto;
+    color: #53FEC0;
+    font-weight:400;
+    font-size:20px;
+    margin-top: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

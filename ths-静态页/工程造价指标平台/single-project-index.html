@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="containner">
+        <div class="header">
+            <div class="header-inner width_1200">
+                <div class="logo">深圳市建设工程造价指标数据应用平台</div>
+                <ul class="about-user">
+                    <li>请登录</li>
+                    <li>免费注册</li>
+                    <li>我的消息（0）</li>
+                    <li>用户中心</li>
+                    <li>指标软件下载</li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul class="nav width_1200">
+                <li>全部分类
+                    <ul class="all-type">
+                        <li>居住建筑</li>
+                        <li>教育建筑</li>
+                        <li>医疗建筑</li>
+                        <li>体育建筑</li>
+                        <li>交通建筑</li>
+                        <li>文化建筑</li>
+                        <li>工业建筑</li>
+                        <li>宾馆及酒店建筑</li>
+                        <li>办公建筑</li>
+                        <li>商业综合体建筑</li>
+                        <li>其他建筑</li>
+                    </ul>
+                </li>
+                <li>首页</li>
+                <li>建设项目指标</li>
+                <li>单项工程指标</li>
+                <li>综合指标</li>
+                <li>动态指标</li>
+                <li>指标对比分析</li>
+                <li>我的指标库</li>
+            </ul>
+        </div>
+        <div class="content width_1200">
+            <ul class="breadcrumb">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">单项工程指标</a></li>
+            </ul>
+            <div class="filter-box">
+                <div class="show-section found">共找到<span>100</span>个工程</div>
+                <div class="show-section building-classification">
+                    <div class="type-name">建筑分类:</div>
+                    <ul class="name-list">
+                        <li class="unlimited">不限</li>
+                        <li>居住建筑</li>
+                        <li>教育建筑</li>
+                        <li>医疗建筑</li>
+                        <li>体育建筑</li>
+                        <li>交通建筑</li>
+                        <li>文化建筑</li>
+                        <li>工业建筑</li>
+                        <li>宾馆及酒店建筑</li>
+                        <li>办公建筑</li>
+                        <li>商业综合体建筑</li>
+                        <li>其他建筑</li>
+                    </ul>
+                </div>
+                <div class="show-section cost-stage">
+                    <div class="type-name">造价阶段:</div>
+                    <ul class="name-list">
+                        <li>不限</li>
+                        <li>投资估算</li>
+                        <li>概算</li>
+                        <li>招标控制价</li>
+                        <li>施工图预算</li>
+                        <li>竣工结算</li>
+                        <li>其他</li>
+                    </ul>
+                    <div class="cost-stage-more">更多</div>
+                </div>
+                <div class="show-section upper-number">
+                    <div class="type-name">地上层数:</div>
+                    <ul class="name-list">
+                        <li>不限</li>
+                        <li>低层(1~3层)</li>
+                        <li>多层(4-6层)</li>
+                        <li>中高层(7-9层)</li>
+                        <li>高层(10-30层)</li>
+                        <li>超高层(31层以上)</li>
+                    </ul>
+                </div>
+                <div class="hidden-section hidden">
+                    <div class="down-number">
+                        <div class="type-name">地下层数:</div>
+                        <ul class="name-list">
+                            <li>不限</li>
+                            <li>无地下室</li>
+                            <li>地下1层</li>
+                            <li>地下2层</li>
+                            <li>地下3层</li>
+                            <li>地下4层及以上</li>
+                        </ul>
+                    </div>
+                    <div class="decoration">
+                        <div class="type-name">装修标准:</div>
+                        <ul class="name-list">
+                            <li>不限</li>
+                            <li>毛坯</li>
+                            <li>简装</li>
+                            <li>精装</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="more-btn">
+                    更多选项（地下层数、装修标准…）
+                </div>
+            </div>
+            <div class="prj-tabs-box">
+                <ul class="tabs">
+                    <li class="tab active">最新发布</li>
+                    <li class="tab">按编制日期<div class="sort"></div></li>
+                    <li class="tab">按单方造价<div class="sort"></div></li>
+                    <li class="tab">按评价<div class="sort"></div></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-content-header">
+                        <div class="checkboxs">
+                            <div class="free">
+                                <input type="checkbox" id="free" name="free" checked>
+                                <label for="free">免费工程指标</label>
+                            </div>
+                            <div class="vip">
+                                <input type="checkbox" id="vip" name="vip">
+                                <label for="vip">vip尊享指标</label>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <input type="text" placeholder="请输入关键字搜索...">
+                        </div>
+                    </div>
+                    <div class="prj-cards-box">
+                        <div class="prj-card-inner">
+                            <div class="card">
+                                <div class="prj-img">
+                                    <img src="./images/prj-img.jpg" alt="prj-img">
+                                </div>
+                                <ul class="prj-info">
+                                    <li>
+                                        <div class="prj-name">深圳市高级中学教学楼22#</div>
+                                        <div class="prj-type">工程类别：教学楼</div>
+                                        <div class="cost-stage">造价阶段：招标控制价</div>
+                                        <ul class="stars">
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star half-star"></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div style="height: 19px"></div>
+                                        <div class="building-storey">建筑层数：地上4层&nbsp;&nbsp;地下1层</div>
+                                        <div class="pricing-mode">计价模式：《建设工程工程量清单计价规范》GB50500-2008</div>
+                                        <div class="building-area">总建筑面积：2933.40平方米</div>
+                                    </li>
+                                    <li>
+                                        <div class="tags">
+                                            <span class="tag open-tendering">公开招标</span><span class="tag normal">普通</span>
+                                        </div>
+                                        <div class="date">2013年04月</div>
+                                        <div class="unit-price">2155.29元/㎡</div>
+                                        <div class="compare-checkbox">
+                                            <input type="checkbox" class="compare-input" name="compare">
+                                            <label for="compare">加入对比</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <div class="prj-img">
+                                    <img src="./images/prj-img.jpg" alt="prj-img">
+                                </div>
+                                <ul class="prj-info">
+                                    <li>
+                                        <div class="prj-name">深圳市高级中学教学楼22#</div>
+                                        <div class="prj-type">工程类别：教学楼</div>
+                                        <div class="cost-stage">造价阶段：招标控制价</div>
+                                        <ul class="stars">
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star half-star"></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div style="height: 19px"></div>
+                                        <div class="building-storey">建筑层数：地上4层&nbsp;&nbsp;地下1层</div>
+                                        <div class="pricing-mode">计价模式：《建设工程工程量清单计价规范》GB50500-2008</div>
+                                        <div class="building-area">总建筑面积：2933.40平方米</div>
+                                    </li>
+                                    <li>
+                                        <div class="tags">
+                                            <span class="tag open-tendering">公开招标</span><span class="tag normal">普通</span>
+                                        </div>
+                                        <div class="date">2013年04月</div>
+                                        <div class="unit-price">2155.29元/㎡</div>
+                                        <div class="compare-checkbox">
+                                            <input type="checkbox" class="compare-input" name="compare">
+                                            <label for="compare">加入对比</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="prj-card-inner">
+                            <div class="card">
+                                <div class="prj-img">
+                                    <img src="./images/prj-img.jpg" alt="prj-img">
+                                </div>
+                                <ul class="prj-info">
+                                    <li>
+                                        <div class="prj-name">深圳市高级中学教学楼33#</div>
+                                        <div class="prj-type">工程类别：教学楼</div>
+                                        <div class="cost-stage">造价阶段：招标控制价</div>
+                                        <ul class="stars">
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star half-star"></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div style="height: 19px"></div>
+                                        <div class="building-storey">建筑层数：地上4层&nbsp;&nbsp;地下1层</div>
+                                        <div class="pricing-mode">计价模式：《建设工程工程量清单计价规范》GB50500-2008</div>
+                                        <div class="building-area">总建筑面积：2933.40平方米</div>
+                                    </li>
+                                    <li>
+                                        <div class="tags">
+                                            <span class="tag open-tendering">公开招标</span><span class="tag normal">普通</span>
+                                        </div>
+                                        <div class="date">2013年04月</div>
+                                        <div class="unit-price">2155.29元/㎡</div>
+                                        <div class="compare-checkbox">
+                                            <input type="checkbox" class="compare-input" name="compare">
+                                            <label for="compare">加入对比</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <div class="prj-img">
+                                    <img src="./images/prj-img.jpg" alt="prj-img">
+                                </div>
+                                <ul class="prj-info">
+                                    <li>
+                                        <div class="prj-name">深圳市高级中学教学楼22#</div>
+                                        <div class="prj-type">工程类别：教学楼</div>
+                                        <div class="cost-stage">造价阶段：招标控制价</div>
+                                        <ul class="stars">
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star half-star"></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div style="height: 19px"></div>
+                                        <div class="building-storey">建筑层数：地上4层&nbsp;&nbsp;地下1层</div>
+                                        <div class="pricing-mode">计价模式：《建设工程工程量清单计价规范》GB50500-2008</div>
+                                        <div class="building-area">总建筑面积：2933.40平方米</div>
+                                    </li>
+                                    <li>
+                                        <div class="tags">
+                                            <span class="tag open-tendering">公开招标</span><span class="tag normal">普通</span>
+                                        </div>
+                                        <div class="date">2013年04月</div>
+                                        <div class="unit-price">2155.29元/㎡</div>
+                                        <div class="compare-checkbox">
+                                            <input type="checkbox" class="compare-input" name="compare">
+                                            <label for="compare">加入对比</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="prj-card-inner">
+                            <div class="card">
+                                <div class="prj-img">
+                                    <img src="./images/prj-img.jpg" alt="prj-img">
+                                </div>
+                                <ul class="prj-info">
+                                    <li>
+                                        <div class="prj-name">深圳市高级中学教学楼22#</div>
+                                        <div class="prj-type">工程类别：教学楼</div>
+                                        <div class="cost-stage">造价阶段：招标控制价</div>
+                                        <ul class="stars">
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star half-star"></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div style="height: 19px"></div>
+                                        <div class="building-storey">建筑层数：地上4层&nbsp;&nbsp;地下1层</div>
+                                        <div class="pricing-mode">计价模式：《建设工程工程量清单计价规范》GB50500-2008</div>
+                                        <div class="building-area">总建筑面积：2933.40平方米</div>
+                                    </li>
+                                    <li>
+                                        <div class="tags">
+                                            <span class="tag open-tendering">公开招标</span><span class="tag normal">普通</span>
+                                        </div>
+                                        <div class="date">2013年04月</div>
+                                        <div class="unit-price">2155.29元/㎡</div>
+                                        <div class="compare-checkbox">
+                                            <input type="checkbox" class="compare-input" name="compare">
+                                            <label for="compare">加入对比</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <div class="prj-img">
+                                    <img src="./images/prj-img.jpg" alt="prj-img">
+                                </div>
+                                <ul class="prj-info">
+                                    <li>
+                                        <div class="prj-name">深圳市高级中学教学楼22#</div>
+                                        <div class="prj-type">工程类别：教学楼</div>
+                                        <div class="cost-stage">造价阶段：招标控制价</div>
+                                        <ul class="stars">
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star half-star"></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div style="height: 19px"></div>
+                                        <div class="building-storey">建筑层数：地上4层&nbsp;&nbsp;地下1层</div>
+                                        <div class="pricing-mode">计价模式：《建设工程工程量清单计价规范》GB50500-2008</div>
+                                        <div class="building-area">总建筑面积：2933.40平方米</div>
+                                    </li>
+                                    <li>
+                                        <div class="tags">
+                                            <span class="tag open-tendering">公开招标</span><span class="tag normal">普通</span>
+                                        </div>
+                                        <div class="date">2013年04月</div>
+                                        <div class="unit-price">2155.29元/㎡</div>
+                                        <div class="compare-checkbox">
+                                            <input type="checkbox" class="compare-input" name="compare">
+                                            <label for="compare">加入对比</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="prj-card-inner">
+                            <div class="card">
+                                <div class="prj-img">
+                                    <img src="./images/prj-img.jpg" alt="prj-img">
+                                </div>
+                                <ul class="prj-info">
+                                    <li>
+                                        <div class="prj-name">深圳市高级中学教学楼22#</div>
+                                        <div class="prj-type">工程类别：教学楼</div>
+                                        <div class="cost-stage">造价阶段：招标控制价</div>
+                                        <ul class="stars">
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star half-star"></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div style="height: 19px"></div>
+                                        <div class="building-storey">建筑层数：地上4层&nbsp;&nbsp;地下1层</div>
+                                        <div class="pricing-mode">计价模式：《建设工程工程量清单计价规范》GB50500-2008</div>
+                                        <div class="building-area">总建筑面积：2933.40平方米</div>
+                                    </li>
+                                    <li>
+                                        <div class="tags">
+                                            <span class="tag open-tendering">公开招标</span><span class="tag normal">普通</span>
+                                        </div>
+                                        <div class="date">2013年04月</div>
+                                        <div class="unit-price">2155.29元/㎡</div>
+                                        <div class="compare-checkbox">
+                                            <input type="checkbox" class="compare-input" name="compare">
+                                            <label for="compare">加入对比</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <div class="prj-img">
+                                    <img src="./images/prj-img.jpg" alt="prj-img">
+                                </div>
+                                <ul class="prj-info">
+                                    <li>
+                                        <div class="prj-name">深圳市高级中学教学楼22#</div>
+                                        <div class="prj-type">工程类别：教学楼</div>
+                                        <div class="cost-stage">造价阶段：招标控制价</div>
+                                        <ul class="stars">
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star full-star"></li>
+                                            <li class="star half-star"></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div style="height: 19px"></div>
+                                        <div class="building-storey">建筑层数：地上4层&nbsp;&nbsp;地下1层</div>
+                                        <div class="pricing-mode">计价模式：《建设工程工程量清单计价规范》GB50500-2008</div>
+                                        <div class="building-area">总建筑面积：2933.40平方米</div>
+                                    </li>
+                                    <li>
+                                        <div class="tags">
+                                            <span class="tag open-tendering">公开招标</span><span class="tag normal">普通</span>
+                                        </div>
+                                        <div class="date">2013年04月</div>
+                                        <div class="unit-price">2155.29元/㎡</div>
+                                        <div class="compare-checkbox">
+                                            <input type="checkbox" class="compare-input" name="compare">
+                                            <label for="compare">加入对比</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">分页</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-top-inner width_1200">
+                    <ul class="about-us">
+                        <li>关于我们</li>
+                        <li><a href="#">公司介绍</a></li>
+                        <li><a href="#">公司历程</a></li>
+                        <li><a href="#">主要产品</a></li>
+                    </ul>
+                    <ul class="its-website">
+                        <li>旗下网站</li>
+                        <li><a href="#">官方商城</a></li>
+                        <li><a href="#">积分商城</a></li>
+                        <li><a href="#">询采平台</a></li>
+                    </ul>
+                    <ul class="my-links">
+                        <li>友情链接</li>
+                        <li><a href="#">深圳市住建局</a></li>
+                        <li><a href="#">深圳市造价站</a></li>
+                        <li><a href="#">建设工程交易中心</a></li>
+                    </ul>
+                    <div class="WeChat">
+                        <div class="qr-code"></div>
+                        <p>斯维尔官方微信</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2019 Thsware, All Rights Reserved. 斯维尔公司 版权所有</p>
+                <p>粤ICP备11030099号-2</p>
+            </div>
+        </div>
+        <div class="fix-box">
+            <a class="return-top" onclick="window.scrollTo({ left: 0, top: 0, behavior: 'smooth' })">返回顶部</a>
+            <a class="contact-us" href="#">联系我们</a>
+            <a class="focus-us" href="#">
+                关注我们
+                <img src="./images/ths-wechat.png" alt="ths-wechat">
+            </a>
+            <a class="suggest" href="#">意见反馈</a>
+        </div>
+        <div class="compare-box">
+            <div class="header">
+                <span>指标对比</span><span onclick="$('.compare-box').hide()">隐藏</span>
+            </div>
+            <div class="content">
+                <div class="prj-box">
+                    <div class="thumb-img">1</div>
+                    <p>您还可以继续添加</p>
+                </div>
+                <div class="prj-box">
+                    <div class="thumb-img">2</div>
+                    <p>您还可以继续添加</p>
+                </div>
+                <div class="prj-box">
+                    <div class="thumb-img">3</div>
+                    <p>您还可以继续添加</p>
+                </div>
+                <div class="prj-box">
+                    <div class="thumb-img">4</div>
+                    <p>您还可以继续添加</p>
+                </div>
+                <div class="operate-box">
+                    <a class="to-compare" href="#">对比</a>
+                    <a class="clear">清空对比栏</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(function() {
+        // 点击对比checkbox
+        $('.compare-input').click(function() {
+            if ($(this).prop('checked')) {
+                // 添加
+                $('.compare-box').show();
+                var prjInfoEle = $(this).closest('.prj-info');
+                var src = prjInfoEle.siblings('.prj-img').children('img').attr('src');
+                var prjName = prjInfoEle.find('.prj-name').html();
+                if ($('.compare-box img').length) {
+                    var nextIndex = $('.compare-box img').length;
+                    $('.prj-box').eq(nextIndex).empty().append('<div class="thumb-img white-bg"><img src=' + src + ' /></div><p><span class="prj-name">' + prjName + '</span><span class="del">删除</span></p>');
+                } else {
+                    $('.prj-box').eq(0).empty().append('<div class="thumb-img white-bg"><img src=' + src + ' /></div><p><span class="prj-name">' + prjName + '</span><span class="del">删除</span></p>');
+                }
+                // 删除
+                $('.prj-box .del').click(function() {
+                    var prjBox = $(this).closest('.prj-box');
+                    prjBox.empty().append('<div class="thumb-img">' + (prjBox.index() + 1) + '</div><p>您还可以继续添加</p>');
+                });
+            } else {
+                var prjCard = $(this).closest('.card');
+                if ($('.compare-box img').length) {
+                    $('.prj-box').eq(prjCard.index()).empty().append('<div class="thumb-img">' + (prjCard.index() + 1 ) + '</div><p>您还可以继续添加</p>');
+                }
+            }
+        });
+        // 清空
+        $('.clear').click(function() {
+            var imgs = $('.compare-box img');
+            if (imgs.length) {
+                var prjBoxs = imgs.closest('.prj-box');
+                prjBoxs.each(function() {
+                    $(this).empty().append('<div class="thumb-img">' + ($(this).index() + 1) + '</div><p>您还可以继续添加</p>');
+                })
+                
+            }
+        });
+        // 高亮过滤条件
+        highLightFilterItem();
+        function highLightFilterItem() { 
+            var classList = ['building-classification', 'cost-stage', 'upper-number', 'down-number', 'decoration'];
+            classList.forEach(function (item) { 
+                onClickFilterItem(item)
+            });
+            function onClickFilterItem(className) { 
+                var itemList =  $('.' + className + ' .name-list li');
+                itemList.click(function(e) {
+                    itemList.removeClass('selected');
+                    $(this).addClass('selected');
+                    if (className === 'building-classification') {
+                        itemList.removeClass('building-type-selected');
+                        if ($(this).index()) {
+                            $(this).addClass('building-type-selected');
+                        } 
+                    }
+                })
+            }
+        };
+        
+        // 更多切换
+        $('.filter-box .more-btn').click(function() {
+            $('.hidden-section').toggle('hidden');
+            if ($(this).html().indexOf('更多') > -1) {
+                $(this).html('收起').addClass('hide-more');
+            } else {
+                $(this).html('更多选项（地下层数、装修标准…）').removeClass('hide-more');
+            }
+        });
+
+        // tab切换
+        $('.tabs .tab').each(function() {
+            this.clickCount = 0;
+        });
+        $('.tabs .tab').click(function() {
+            $('.tabs .tab').removeClass('active');
+            $('.tab .sort').hide();
+            $(this).toggleClass('active').parent().siblings('.tab-content').find('.prj-card-inner').hide().fadeOut(500)
+                .eq($(this).index()).show().fadeIn(500);
+
+            // 排序切换
+            var sortEle = $(this).children('.sort');
+            this.clickCount++;
+            if (this.clickCount % 2) {
+                sortEle.removeClass('bottom').addClass('top');
+            } else {
+                sortEle.removeClass('top').addClass('bottom');
+            }
+            sortEle.show();
+        });
+
+
+        $('.prj-cards-box .card').click(function() {
+            window.location.href = './single-project-index-detail.html'
+        })
+    })
+</script>
+</html>

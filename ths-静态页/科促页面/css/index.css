@@ -1,0 +1,293 @@
+#container .header {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  background: #2f93ff;
+}
+#container .content {
+  display: flex;
+}
+#container .content .main {
+  flex: 1;
+  height: calc(100vh - 40px);
+  padding: 30px 40px;
+  background: #f0f2f4;
+  overflow-y: auto;
+}
+#container .content .main > div {
+  position: relative;
+}
+#container .content .main .its-articles.pageone .radio-box {
+  margin-left: 18px;
+}
+#container .content .main .its-articles.pageone .radio-box .label {
+  width: auto;
+}
+#container .content .main .its-articles.pageone .radio-box .radios .textbox-label {
+  width: 50px;
+}
+#container .content .main .main-point .form-content {
+  margin-left: 18px;
+  padding: 32px 22px;
+  background: #ffffff;
+  border: 1px solid #e8edf1;
+  overflow: hidden;
+}
+#container .content .main .main-point .form-content table {
+  width: 100%;
+}
+#container .content .main .main-point .form-content table tr td {
+  padding: 25px 0;
+  padding-left: 29px;
+  border: 1px solid #E8EDF1;
+}
+#container .content .main .main-point .form-content table tr td .radio-box {
+  margin-bottom: 0;
+}
+#container .content .main .main-point .form-content table tr td .checkbox {
+  width: 14px !important;
+  height: 14px !important;
+  border: 1px solid #CDCDCD;
+  border-radius: 2px;
+}
+#container .content .main .main-point .form-content table tr td .checkbox .checkbox-checked {
+  background: #fff;
+}
+#container .content .main .main-point .form-content table tr td .checkbox .checkbox-checked svg {
+  display: block;
+  display: flex;
+  line-height: 12px;
+}
+#container .content .main .main-point .form-content table tr td .checkbox .checkbox-checked svg path {
+  stroke: #2F93FF;
+  stroke-width: 3px;
+}
+#container .content .main .main-point .form-content table tr td .textbox-label {
+  width: auto;
+  margin-right: 24px;
+}
+#container .content .main .main-point .form-content table tr td .other {
+  margin-top: 14px;
+}
+#container .content .main .main-point .form-content table tr td .other input {
+  width: 250px;
+  height: 34px;
+  margin-right: 28px;
+  padding-left: 5px;
+  color: #666;
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+}
+#container .content .main .main-point .form-content table tr td .other .textbox-label {
+  margin-right: 6px;
+}
+#container .content .main .main-point .form-content table tr td:first-child {
+  padding: 0;
+  text-align: center;
+}
+#container .content .main .main-point .form-content .textarea-box {
+  padding: 18px;
+}
+#container .content .main .main-point .form-content .textarea-box .title-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+#container .content .main .main-point .form-content .textarea-box .title-text .radio-box {
+  margin-bottom: 0;
+}
+#container .content .main .main-point .form-content .textarea-box textarea {
+  width: 100%;
+  height: 146px;
+  padding: 10px;
+  color: #666;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+}
+#container .content .main .main-point .form-content .textarea-box textarea::placeholder {
+  color: #BDBDBD;
+  font-family: Source Han Sans CN;
+}
+#container .content .main .main-point .form-content .form_ele_6_2 {
+  width: 33.33%;
+}
+#container .content .main .main-point .form-content .form_ele_6_3 {
+  width: 50%;
+}
+#container .content .main .main-point .form-content .form_ele_6_4 {
+  width: 66.66%;
+}
+#container .content .main .main-point .form-content .form_ele_6_6 {
+  width: 100%;
+}
+#container .content .main .main-point .form-content .form_ele_6_2,
+#container .content .main .main-point .form-content .form_ele_6_3,
+#container .content .main .main-point .form-content .form_ele_6_4,
+#container .content .main .main-point .form-content .form_ele_6_6 {
+  min-width: 300px;
+  margin-bottom: 25px;
+}
+#container .content .main .main-point .form-content .form_ele_6_2 .form_ele_title,
+#container .content .main .main-point .form-content .form_ele_6_3 .form_ele_title,
+#container .content .main .main-point .form-content .form_ele_6_4 .form_ele_title,
+#container .content .main .main-point .form-content .form_ele_6_6 .form_ele_title {
+  display: inline-block;
+  width: 120px;
+  line-height: 34px;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#container .content .main .main-point .form-content .form_ele_6_2 .form_ele_content,
+#container .content .main .main-point .form-content .form_ele_6_3 .form_ele_content,
+#container .content .main .main-point .form-content .form_ele_6_4 .form_ele_content,
+#container .content .main .main-point .form-content .form_ele_6_6 .form_ele_content {
+  width: calc(100% - 120px);
+  min-width: 180px;
+  min-height: 34px;
+  padding-left: 8px;
+}
+#container .content .main .main-point .form-content .form_ele_6_2 .form_ele_content input,
+#container .content .main .main-point .form-content .form_ele_6_3 .form_ele_content input,
+#container .content .main .main-point .form-content .form_ele_6_4 .form_ele_content input,
+#container .content .main .main-point .form-content .form_ele_6_6 .form_ele_content input {
+  width: 180px;
+  height: 34px;
+  padding-left: 5px;
+  color: #666;
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+}
+#container .content .main .main-point .form-content .form_ele_6_2 .form_ele_content > span,
+#container .content .main .main-point .form-content .form_ele_6_3 .form_ele_content > span,
+#container .content .main .main-point .form-content .form_ele_6_4 .form_ele_content > span,
+#container .content .main .main-point .form-content .form_ele_6_6 .form_ele_content > span {
+  margin-left: 8px;
+}
+#container .content .main .main-point .form-content .form_ele_6_2 .form_ele_content > span.tip,
+#container .content .main .main-point .form-content .form_ele_6_3 .form_ele_content > span.tip,
+#container .content .main .main-point .form-content .form_ele_6_4 .form_ele_content > span.tip,
+#container .content .main .main-point .form-content .form_ele_6_6 .form_ele_content > span.tip {
+  color: #999;
+}
+#container .content .main .main-point .form-content .form_ele_6_2 .form_ele_content .form-radios .radiobutton,
+#container .content .main .main-point .form-content .form_ele_6_3 .form_ele_content .form-radios .radiobutton,
+#container .content .main .main-point .form-content .form_ele_6_4 .form_ele_content .form-radios .radiobutton,
+#container .content .main .main-point .form-content .form_ele_6_6 .form_ele_content .form-radios .radiobutton {
+  width: 18px !important;
+  height: 18px !important;
+  border: 1px solid #b5b5b5;
+}
+#container .content .main .main-point .form-content .form_ele_6_2 .form_ele_content .form-radios .radiobutton .radiobutton-inner,
+#container .content .main .main-point .form-content .form_ele_6_3 .form_ele_content .form-radios .radiobutton .radiobutton-inner,
+#container .content .main .main-point .form-content .form_ele_6_4 .form_ele_content .form-radios .radiobutton .radiobutton-inner,
+#container .content .main .main-point .form-content .form_ele_6_6 .form_ele_content .form-radios .radiobutton .radiobutton-inner {
+  background: #2f93ff;
+}
+#container .content .main .main-point .form-content .form_ele_6_2 .form_ele_content .form-radios .textbox-label,
+#container .content .main .main-point .form-content .form_ele_6_3 .form_ele_content .form-radios .textbox-label,
+#container .content .main .main-point .form-content .form_ele_6_4 .form_ele_content .form-radios .textbox-label,
+#container .content .main .main-point .form-content .form_ele_6_6 .form_ele_content .form-radios .textbox-label {
+  width: 60px;
+}
+#container .content .main .main-point .form-content .form_ele_6_2 .form_ele_content .form-radios .textbox-label:last-child,
+#container .content .main .main-point .form-content .form_ele_6_3 .form_ele_content .form-radios .textbox-label:last-child,
+#container .content .main .main-point .form-content .form_ele_6_4 .form_ele_content .form-radios .textbox-label:last-child,
+#container .content .main .main-point .form-content .form_ele_6_6 .form_ele_content .form-radios .textbox-label:last-child {
+  width: auto;
+}
+#container .content .main .main-point .form-content .fl {
+  float: left;
+}
+#container .content .main .remark .text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  padding-left: 18px;
+}
+#container .content .main .article-explain .text,
+#container .content .main .review-points .text {
+  text-indent: 2em;
+  line-height: 24px;
+  color: #999;
+}
+#container .content .main .toggle-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 20px;
+  color: #999;
+  background-image: url(../images/arrow-up.png);
+  background-repeat: no-repeat;
+  background-position: 95% 60%;
+  background-size: 14px;
+  cursor: pointer;
+}
+#container .content .right-side {
+  width: 328px;
+  padding: 32px 20px;
+  background-color: #fff;
+}
+#container .content .right-side .label {
+  width: 110px !important;
+}
+#container .content .right-side .label .required {
+  color: #D22C20;
+}
+#container .content .right-side .radio-box:first-child {
+  margin-top: 0;
+}
+#container .content .right-side .textarea-box {
+  display: flex;
+  margin-top: 30px;
+}
+#container .content .right-side .textarea-box textarea {
+  flex: 1;
+  height: 72px;
+  padding: 5px;
+  color: #666;
+  border: 1px solid #D0D0D0;
+  border-radius: 2px;
+}
+#container .content .title {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+#container .content .radio-box {
+  display: flex;
+  margin-bottom: 25px;
+}
+#container .content .radio-box .label {
+  width: 200px;
+  text-align: right;
+}
+#container .content .radio-box .radios {
+  flex: 1;
+}
+#container .content .radio-box .radios .radiobutton {
+  width: 18px !important;
+  height: 18px !important;
+  border: 1px solid #b5b5b5;
+}
+#container .content .radio-box .radios .radiobutton .radiobutton-inner {
+  background: #2f93ff;
+}
+#container .content .radio-box .radios .textbox-label {
+  width: 145px;
+}
+#container .content .radio-box .radios .row-radios {
+  margin-top: 20px;
+}
+#container .content .radio-box .radios .row-radios:first-child {
+  margin-top: 0;
+}
+#container .content .radio-box.short-textbox-label .radios .textbox-label {
+  width: 43px;
+}

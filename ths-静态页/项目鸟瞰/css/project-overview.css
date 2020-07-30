@@ -1,0 +1,597 @@
+* {
+  box-sizing: border-box;
+}
+select:focus,
+input[type=text]:focus,
+input[type=date]:focus {
+  outline: 0;
+  border: none;
+}
+select,
+input::-webkit-input-placeholder {
+  color: #dbe5ea;
+}
+select,
+input:-moz-placeholder {
+  color: #dbe5ea;
+}
+select,
+input::-moz-placeholder {
+  color: #dbe5ea;
+}
+select,
+input:-ms-input-placeholder {
+  color: #dbe5ea;
+}
+.infbox {
+  width: 1872px;
+  height: 897px;
+  margin: 0 auto;
+  position: relative;
+}
+.inful {
+  margin-left: 30px;
+  margin-bottom: 28px;
+  padding-top: 10px;
+}
+.bridul {
+  margin-left: 32px;
+}
+.infli,
+.bridli {
+  cursor: pointer;
+  width: 132px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  display: box;
+  display: -webkit-box;
+  /* iOS 6-, Safari 3.1-6 */
+  display: -webkit-flex;
+  /* Chrome */
+  display: -moz-box;
+  /* Firefox 19 */
+  display: -ms-flexbox;
+  display: flex;
+  /*flex容器*/
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  text-decoration: none;
+  float: left;
+  margin-right: 8px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 0;
+}
+.infli {
+  color: #0FEBFF;
+}
+.bridli {
+  color: #FFFFFF;
+}
+.infli.arrow {
+  color: #ffffff;
+  font-size: 30px;
+  width: 78px;
+}
+.infli.pitch,
+.infli:not(.arrow):hover {
+  color: #4DF4B7;
+}
+.bridli.pon,
+.bridli:hover {
+  color: #FFFFFF;
+}
+.infli::before,
+.bridli::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform: skewX(-45deg);
+  -ms-transform: skewX(-45deg);
+  /* IE 9 */
+  -moz-transform: skewX(-45deg);
+  /* Firefox */
+  -webkit-transform: skewX(-45deg);
+  /* Safari 和 Chrome */
+  -o-transform: skewX(-45deg);
+  /* Opera */
+}
+.infli::before {
+  background: rgba(15, 235, 255, 0.3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C0FEBFF, FF, endColorstr=#4C0FEBFF, FF);
+}
+.bridli::before {
+  background: #0085A0;
+}
+.infli.pitch::before,
+.infli:not(.arrow):hover::before {
+  background: rgba(15, 235, 255, 0.4);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#660FEBFF, FF, endColorstr=#660FEBFF, FF);
+}
+.bridli.pon::before,
+.bridli:hover::before {
+  background: rgba(77, 244, 183, 0.7);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B24DF4B7, B7, endColorstr=#B24DF4B7, B7);
+}
+.correl_table,
+.dorrel_table {
+  width: 1808px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.forrel_table {
+  width: 611px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+.correl_table tbody td,
+.dorrel_table tbody td,
+.forrel_table tbody td {
+  height: 60px;
+  border-bottom: 1px solid #20BED6;
+  border-right: 1px solid #20BED6;
+  vertical-align: middle;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(15, 235, 255, 0.4);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#660FEBFF, FF, endColorstr=#660FEBFF, FF);
+}
+.dorrel_table tbody td,
+.forrel_table tbody td {
+  color: rgba(255, 255, 255, 0.9);
+}
+.correl_table tbody td:nth-child(1),
+.correl_table tbody td:nth-child(3),
+.correl_table tbody td:nth-child(5),
+.correl_table tbody td:nth-child(7) {
+  font-size: 16px;
+  padding-right: 16px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.9);
+}
+.correl_table tbody td:nth-child(2),
+.correl_table tbody td:nth-child(4),
+.correl_table tbody td:nth-child(6),
+.correl_table tbody td:nth-child(8) {
+  font-size: 18px;
+  text-align: left;
+  padding-left: 16px;
+  color: #FFFFFF;
+}
+.forrel_table tbody td:nth-child(1) {
+  padding-right: 20px;
+  text-align: right;
+  font-size: 16px;
+}
+.forrel_table tbody td:nth-child(2) {
+  padding-left: 13px;
+  text-align: left;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.inftit {
+  position: absolute;
+  color: #0FEBFF;
+  font-size: 22px;
+  top: 16px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.feed {
+  width: 1808px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.feedlist {
+  margin-right: 40px;
+}
+.feedlist .wlk {
+  display: inline-block;
+  font-size: 16px;
+  color: #dbe5ea;
+  margin-right: 16px;
+}
+.feedlist .valgk,
+.feedlist .glk,
+.might .valgk {
+  padding-left: 16px;
+  height: 44px;
+  background: #06728E;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+}
+.feedlist .valgk,
+.feedlist .glk {
+  width: 264px;
+  height: 44px;
+}
+.might .valgk {
+  margin-right: 40px;
+  width: 86px;
+  height: 44px;
+}
+.feedlist .seek {
+  display: inline-block;
+  text-align: center;
+  background: #4DF4B7;
+  color: #FFFFFF;
+  width: 90px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+}
+.lizat,
+.tegral {
+  width: 1812px;
+  margin: 0 auto;
+}
+.caption {
+  margin-bottom: 30px;
+}
+.captRt,
+.captQt {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+}
+.captRt {
+  color: #0FEBFF;
+}
+.captQt {
+  color: #FFD050;
+}
+.captRt::after,
+.captQt::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 35px;
+  height: 26px;
+  top: 4px;
+}
+.captRt::after {
+  background: url(../img/adornrt.png) no-repeat;
+}
+.captQt::after {
+  background: url(../img/adornrt1.png) no-repeat;
+}
+.captRt::before,
+.captQt::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 68px;
+  height: 22px;
+  top: 26px;
+  left: -9px;
+}
+.captRt::before {
+  background: url(../img/adornline.png) no-repeat;
+}
+.captQt::before {
+  background: url(../img/adornline1.png) no-repeat;
+}
+.water .gross {
+  font-size: 24px;
+  color: #0FEBFF;
+}
+.electric .gross {
+  color: #FFD050;
+  font-size: 24px;
+}
+.logger {
+  width: 611px;
+}
+.journ {
+  margin-bottom: 14px;
+}
+.journli img {
+  width: 611px;
+  height: 412px;
+  margin-bottom: 4px;
+}
+.circleul {
+  text-align: center;
+}
+.circleli {
+  width: 18px;
+  height: 18px;
+  /*防止浏览器版本过低*/
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  /*解决IE*/
+  behavior: url(../PIE/PIE.htc);
+  background: rgba(255, 255, 255, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7Fffffff, ff, endColorstr=#7Fffffff, ff);
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.circleli.checked {
+  background: #FFFFFF;
+}
+.dict {
+  width: 1170px;
+}
+.tagline {
+  color: #0FEBFF;
+  font-size: 18px;
+}
+/* chorme下设置所有滚动条样式 */
+/*滚动条整体样式*/
+::-webkit-scrollbar {
+  width: 12px;
+  height: 6px;
+  background-color: #02A8D2;
+}
+/*滚动条滑块*/
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #0A84AC;
+}
+/*滚动条轨道*/
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background-color: #02A8D2;
+}
+/* ie */
+body {
+  /*三角箭头的颜色*/
+  scrollbar-arrow-color: #0A84AC;
+  /*滚动条滑块按钮的颜色*/
+  scrollbar-face-color: #0A84AC;
+  /*滚动条整体颜色*/
+  scrollbar-highlight-color: #02A8D2;
+  /*滚动条阴影*/
+  scrollbar-shadow-color: #02A8D2;
+  /*滚动条轨道颜色*/
+  scrollbar-track-color: #02A8D2;
+}
+/* new css */
+body {
+  padding-bottom: 20px;
+}
+.infbox {
+  display: flex;
+}
+.infbox .common-title {
+  font-size: 20px;
+  color: #0FEBFF;
+  position: relative;
+  display: inline-block;
+}
+.infbox .common-title:hover {
+  transform: scale(1.08);
+}
+.infbox .common-title::before,
+.infbox .common-title::after {
+  position: absolute;
+  display: block;
+  content: '';
+}
+.infbox .common-title::before {
+  left: -8px;
+  top: 28px;
+  width: 68px;
+  height: 22px;
+  background: url(../img/adornline.png) no-repeat;
+}
+.infbox .common-title::after {
+  right: -38px;
+  top: 3px;
+  width: 35px;
+  height: 26px;
+  background: url(../img/adornrt.png) no-repeat;
+}
+.infbox .refresh {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 20px;
+  background: url(../img/refresh.png) no-repeat;
+  cursor: pointer;
+}
+.infbox .left-section {
+  position: relative;
+  width: 618px;
+  height: 100%;
+  padding: 25px;
+  margin-right: 10px;
+  background: url(../img/left-section.png) no-repeat;
+}
+.infbox .left-section .title {
+  margin-bottom: 40px;
+}
+.infbox .left-section .table-box {
+  height: 401px;
+  overflow: auto;
+}
+.infbox .left-section .table-box .system-log {
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #4b96c6;
+  border-bottom: none;
+  border-collapse: collapse;
+}
+.infbox .left-section .table-box .system-log tr {
+  height: 80px;
+}
+.infbox .left-section .table-box .system-log tr td {
+  line-height: 20px;
+}
+.infbox .left-section .table-box .system-log tr td:first-child {
+  width: 22%;
+  text-align: center;
+  border-right: 1px solid #4b96c6;
+  border-bottom: 1px solid #4b96c6;
+}
+.infbox .left-section .table-box .system-log tr td:last-child {
+  border-bottom: 1px solid #4b96c6;
+  padding: 0 10px;
+}
+.infbox .left-section .log-echart {
+  width: 100%;
+  height: 360px;
+  margin-top: 20px;
+}
+.infbox .left-section .refresh {
+  left: 32%;
+}
+.infbox .left-section .light {
+  position: absolute;
+  top: 54px;
+  right: 25px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.infbox .left-section .light.danger {
+  background: red;
+}
+.infbox .left-section .light.normal {
+  background: green;
+}
+.infbox .right-section {
+  width: 1244px;
+}
+.infbox .right-section > div {
+  position: relative;
+  float: left;
+  width: 617px;
+  height: 443px;
+  padding: 25px;
+  padding-top: 15px;
+}
+.infbox .right-section .construction-animation {
+  margin-right: 10px;
+  background: url(../img/windowbg.png) no-repeat;
+}
+.infbox .right-section .construction-animation .title {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.infbox .right-section .construction-animation .title.common-title::after,
+.infbox .right-section .construction-animation .title.common-title::before {
+  display: none;
+}
+.infbox .right-section .construction-animation video {
+  width: 100%;
+  height: calc(100% - 60px);
+}
+.infbox .right-section .construction-animation .refresh {
+  right: 25px;
+}
+.infbox .right-section .bim-model {
+  background: url(../img/milestonebg.png) no-repeat;
+}
+.infbox .right-section .bim-model .title-box {
+  margin-bottom: 25px;
+}
+.infbox .right-section .bim-model .title-box .title {
+  float: right;
+}
+.infbox .right-section .bim-model .title-box .title::before {
+  left: 18px;
+}
+.infbox .right-section .bim-model .title-box .title::after {
+  left: -38px;
+  background: url(../img/adornlf.png) no-repeat;
+}
+.infbox .right-section .bim-model .model-box {
+  height: calc(100% - 55px);
+  background: #000;
+}
+.infbox .right-section .bim-model .refresh {
+  right: 32%;
+}
+.infbox .right-section .aerial-photo {
+  margin: 10px 10px 0 0;
+  background: url(../img/weatherbg.png) no-repeat;
+}
+.infbox .right-section .aerial-photo .title {
+  display: block;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.infbox .right-section .aerial-photo .title::before,
+.infbox .right-section .aerial-photo .title::after {
+  display: none;
+}
+.infbox .right-section .aerial-photo .carousel-box {
+  height: calc(100% - 55px);
+  background-image: url(../img/jrt.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.infbox .right-section .aerial-photo .refresh {
+  right: 25px;
+}
+.infbox .right-section .piling-picture {
+  margin-top: 10px;
+  background: url(../img/incidentbg.png) no-repeat;
+}
+.infbox .right-section .piling-picture .title {
+  margin-bottom: 45px;
+}
+.infbox .right-section .piling-picture .content {
+  display: flex;
+  height: calc(100% - 75px);
+}
+.infbox .right-section .piling-picture .content .picture {
+  flex: 3;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.infbox .right-section .piling-picture .content .base-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0 20px 30px;
+  color: #fff;
+}
+.infbox .right-section .piling-picture .content .base-info li span {
+  display: block;
+}
+.infbox .right-section .piling-picture .content .base-info li span:first-child {
+  position: relative;
+  font-size: 14px;
+}
+.infbox .right-section .piling-picture .content .base-info li span:first-child::before {
+  position: absolute;
+  left: -15px;
+  top: 8px;
+  display: block;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #0febff;
+  border-radius: 50%;
+}
+.infbox .right-section .piling-picture .content .base-info li span:last-child {
+  font-size: 26px;
+  font-weight: bold;
+}
+.infbox .right-section .piling-picture .refresh {
+  right: 25px;
+}

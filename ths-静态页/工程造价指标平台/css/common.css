@@ -1,0 +1,17 @@
+.width_1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.ant-btn-group .ant-btn {
+    background-color: #102B5A;
+    border-right: 1px solid #245EC2;
+}
+
+

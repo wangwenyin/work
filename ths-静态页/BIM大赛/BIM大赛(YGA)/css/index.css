@@ -1,0 +1,332 @@
+.warpper .banner img {
+  width: 100%;
+}
+.warpper .content {
+  padding: 0.2rem;
+  padding-top: 0;
+  padding-bottom: 1.52rem;
+  background: linear-gradient(180deg, #17b7ff 0%, #4866ff 100%);
+}
+.warpper .content .content-top .cooperator-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 0.8rem;
+}
+.warpper .content .content-top .cooperator-logos img:first-child {
+  width: 2.12rem;
+  margin-left: -0.15rem;
+}
+.warpper .content .content-top .cooperator-logos img:last-child {
+  width: 1.64rem;
+  margin-right: -0.15rem;
+}
+.warpper .content .content-top .vote-time {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  background: rgba(0, 96, 255, 0.4);
+  position: relative;
+}
+.warpper .content .content-top .vote-time::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  content: '';
+  width: 200%;
+  height: 200%;
+  border: 1px solid #0060FF;
+  transform: scale(0.5);
+  transform-origin: left top;
+  box-sizing: border-box;
+}
+.warpper .content .content-top .vote-time span:last-child {
+  font-size: 0.24rem;
+}
+.warpper .content .content-top .data-statistics {
+  display: flex;
+  margin: 0.2rem 0 0.26rem 0;
+}
+.warpper .content .content-top .data-statistics li {
+  flex: 1;
+  position: relative;
+}
+.warpper .content .content-top .data-statistics li span {
+  display: block;
+  text-align: center;
+}
+.warpper .content .content-top .data-statistics li span:first-child {
+  font-size: 0.3rem;
+}
+.warpper .content .content-top .data-statistics li span:last-child {
+  font-size: 0.26rem;
+  color: #FFCA28;
+  margin-top: 0.16rem;
+}
+.warpper .content .content-top .data-statistics li::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) scaleX(0.5);
+  display: block;
+  content: '';
+  width: 1px;
+  height: 0.6rem;
+  background: #63bfff;
+}
+.warpper .content .content-top .data-statistics li:last-child::after {
+  display: none;
+}
+.warpper .content .cards-box .search-box {
+  display: flex;
+  height: 0.88rem;
+  border-radius: 4px;
+}
+.warpper .content .cards-box .search-box input {
+  flex: 4;
+  padding: 0.2rem;
+  border-radius: 4px 0 0 4px;
+  color: #333;
+}
+.warpper .content .cards-box .search-box input::placeholder {
+  font-size: 0.26rem;
+  color: #999;
+}
+.warpper .content .cards-box .search-box button {
+  flex: 1;
+  background-color: #0060FF;
+  background-image: url(../images/search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.42rem;
+  border-radius: 0px 4px 4px 0px;
+}
+.warpper .content .cards-box .cards {
+  overflow: hidden;
+}
+.warpper .content .cards-box .cards .card {
+  width: calc((100% - 0.2rem) / 2);
+  float: left;
+  margin-top: 0.2rem;
+  position: relative;
+}
+.warpper .content .cards-box .cards .card:nth-child(odd) {
+  margin-right: 0.2rem;
+}
+.warpper .content .cards-box .cards .card .num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 0.5rem;
+  font-size: 0.26rem;
+  background: #0060FF;
+  border-radius: 0 0.5rem 0.5rem 0;
+  letter-spacing: 1px;
+}
+.warpper .content .cards-box .cards .card img {
+  width: 100%;
+  height: 4.4rem;
+}
+.warpper .content .cards-box .cards .card .other-info {
+  padding: 0.1rem;
+  background: #fff;
+}
+.warpper .content .cards-box .cards .card .other-info .title-of-work {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.3rem;
+  color: #333;
+}
+.warpper .content .cards-box .cards .card .other-info .likes {
+  margin: 0.06rem 0 0.1rem 0;
+  padding-left: 0.3rem;
+  color: #0060FF;
+  font-weight: 600;
+  background: url(../images/like.png) no-repeat 0 center / 0.25rem 0.21rem;
+}
+.warpper .content .rank-list-box .rank-list li {
+  display: flex;
+  justify-content: space-between;
+  height: 1.12rem;
+  margin-top: 0.1rem;
+  padding: 0.15rem 0.1rem 0.15rem 0.95rem;
+  background-color: #fff;
+  border-radius: 0.08rem;
+  font-size: 0.24rem;
+  color: #666;
+  position: relative;
+}
+.warpper .content .rank-list-box .rank-list li .index {
+  position: absolute;
+  left: 0.11rem;
+  top: 0.21rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.7rem;
+  height: 0.7rem;
+  font-size: 0.26rem;
+  color: #fff;
+  background: #D4D4D4;
+  border-radius: 50%;
+}
+.warpper .content .rank-list-box .rank-list li:first-child {
+  margin-top: 0;
+}
+.warpper .content .rank-list-box .rank-list li:first-child .index {
+  background: #FF5629;
+}
+.warpper .content .rank-list-box .rank-list li:nth-child(2) .index {
+  background: #FF7F17;
+}
+.warpper .content .rank-list-box .rank-list li:nth-child(3) .index {
+  background: #FFCA29;
+}
+.warpper .content .rank-list-box .rank-list li .rank-card-left {
+  display: flex;
+}
+.warpper .content .rank-list-box .rank-list li .rank-card-left img {
+  width: 0.81rem;
+  margin-right: 0.2rem;
+  border-radius: 50%;
+}
+.warpper .content .rank-list-box .rank-list li .rank-card-left .desc {
+  font-size: 0.3rem;
+  font-weight: 500;
+}
+.warpper .content .rank-list-box .rank-list li .rank-card-left .desc .num {
+  font-weight: bold;
+  color: #333;
+}
+.warpper .content .rank-list-box .rank-list li .vote-num {
+  display: flex;
+  align-items: center;
+}
+.warpper .content .rank-list-box .rank-list li .vote-num span {
+  margin-right: 0.1rem;
+  font-size: 0.28rem;
+  font-weight: bold;
+  color: #0060FF;
+}
+.warpper .content .rules-and-steps .my-box .main-text .top-bar {
+  height: 0.22rem;
+  background: #0060FF;
+  border-radius: 0.11rem;
+}
+.warpper .content .rules-and-steps .my-box .main-text .desc {
+  width: 96%;
+  margin: 0 auto;
+  margin-top: -0.08rem;
+  padding: 0.3rem 0 0.4rem 0;
+  box-shadow: 0 15px 10px -10px #0060FF inset;
+  background: #fff;
+}
+.warpper .content .rules-and-steps .my-box .main-text .desc li {
+  margin-bottom: 0.2rem;
+  padding-left: 0.74rem;
+  padding-right: 2px;
+  line-height: 1.5;
+  color: #333;
+  font-size: 0.3rem;
+  position: relative;
+  counter-increment: Num;
+}
+.warpper .content .rules-and-steps .my-box .main-text .desc li:last-child {
+  margin-bottom: 0;
+}
+.warpper .content .rules-and-steps .my-box .main-text .desc li.explain {
+  color: #0060FF;
+  font-weight: 500;
+}
+.warpper .content .rules-and-steps .my-box .main-text .desc li.explain::before {
+  display: none;
+}
+.warpper .content .rules-and-steps .my-box .main-text .desc li::before {
+  position: absolute;
+  left: 0.2rem;
+  top: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.34rem;
+  height: 0.34rem;
+  content: counter(Num);
+  font-size: 0.26rem;
+  color: #fff;
+  background: #0060FF;
+  border-radius: 50%;
+}
+.warpper .content .works-detail-box .works-img {
+  width: 100%;
+  height: 4.39rem;
+}
+.warpper .content .works-detail-box .detail-info {
+  padding: 0.1rem;
+  padding-top: 0;
+  font-size: 0.3rem;
+  color: #333;
+  background: #fff;
+  overflow: hidden;
+}
+.warpper .content .works-detail-box .detail-info .works-name {
+  margin-bottom: 0.1rem;
+  font-weight: bold;
+}
+.warpper .content .works-detail-box .detail-info ul li {
+  margin-bottom: 0.05rem;
+}
+.warpper .content .works-detail-box .detail-info .vote-btn {
+  margin-top: 0.3rem;
+}
+.warpper .tabbar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 1.12rem;
+  background: #fff;
+}
+.warpper .tabbar li {
+  flex: 1;
+}
+.warpper .tabbar li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 0.7rem;
+  text-align: center;
+  color: #999;
+  font-size: 0.2rem;
+  background-repeat: no-repeat;
+  background-position: center 0.16rem;
+  background-size: 0.5rem 0.52rem;
+}
+.warpper .tabbar li.active a {
+  color: #0060FF;
+}
+.warpper .tabbar li:nth-child(1) a {
+  background-image: url(../images/tab-index.png);
+}
+.warpper .tabbar li:nth-child(1).active a {
+  background-image: url(../images/tab-index-selected.png);
+}
+.warpper .tabbar li:nth-child(2) a {
+  background-image: url(../images/tab-rank.png);
+}
+.warpper .tabbar li:nth-child(2).active a {
+  background-image: url(../images/tab-rank-selected.png);
+}
+.warpper .tabbar li:nth-child(3) a {
+  background-size: 0.38rem 0.46rem;
+  background-image: url(../images/tab-rules.png);
+}
+.warpper .tabbar li:nth-child(3).active a {
+  background-image: url(../images/tab-rules-selected.png);
+}

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1280px;
+    font-family: "SourceHanSansCN", "Chinese Quote", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    color: #666;
+    font-size: 14px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+input, textarea {
+    outline: none;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+hr {
+    height: 0;
+    margin: 30px 0;
+    border-top: 1px solid #DADFE3;
+    clear: both;
+}

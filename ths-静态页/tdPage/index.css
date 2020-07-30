@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 1280px;
+  font-family: "宋体", "SourceHanSansCN", "Chinese Quote", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+}
+table {
+  border-collapse: collapse;
+}
+fieldset,
+img {
+  border: 0;
+}
+input,
+textarea {
+  outline: none;
+}
+ul li {
+  list-style: none;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+body {
+  background: #F0F2F5;
+}
+body #containner {
+  width: 690px;
+  height: 976px;
+  padding: 45px 70px 75px;
+  font-size: 13px;
+  color: #000;
+  background: #fff;
+}
+body #containner table {
+  width: 100%;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+}
+body #containner table td {
+  text-align: center;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+body #containner input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid;
+}
+body #containner input.center {
+  text-align: center;
+}
+body #containner .input_width_340 {
+  width: 340px;
+}
+body #containner .input_width_280 {
+  width: 280px;
+}
+body #containner .input_width_100 {
+  width: 100px;
+}
+body #containner .input_width_60 {
+  width: 60px;
+}
+body #containner .input_width_45 {
+  width: 45px;
+}
+body #containner .input_width_30 {
+  width: 30px;
+}
+body #containner header {
+  width: 365px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 38px;
+  font-size: 26px;
+  font-family: '黑体';
+}
+body #containner section.content {
+  margin-top: 15px;
+  padding: 0 5px;
+}
+body #containner section.content .num {
+  margin-bottom: 10px;
+  text-align: right;
+}
+body #containner section.content .top-table td {
+  height: 31px;
+}
+body #containner section.content .top-table td .sm-fs {
+  display: inline-block;
+  transform: scale(0.8);
+  white-space: nowrap;
+}
+body #containner section.content .title {
+  margin-top: 5px;
+  text-indent: 2em;
+  font-size: 13px;
+  font-weight: normal;
+}
+body #containner section.content .mylist {
+  padding-left: 15px;
+}
+body #containner section.content .mylist li {
+  height: 20px;
+}
+body #containner section.content .mylist li input {
+  height: 100%;
+}
+body #containner section.content .roles {
+  text-indent: 2em;
+  margin: 5px 0;
+  line-height: 22px;
+}
+body #containner section.content p.bf {
+  margin: 5px 0 25px;
+  line-height: 20px;
+  text-indent: 2em;
+  letter-spacing: 1px;
+}
+body #containner section.content .signature > div,
+body #containner section.content .contact > div {
+  margin-top: 5px;
+}
+body #containner section.content .seal {
+  margin-top: 28px;
+  text-align: right;
+}
+body #containner section.content .seal input {
+  width: 30px;
+  border: none;
+}
+body #containner footer .bottom-table td {
+  height: 23px;
+}

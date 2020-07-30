@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>会议预定</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/data-overview.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="gation clearfix">
+            <div class="gatLeft fl">
+                <img src="img/logo.png">
+                <span title="中信国安信息产业股份有限公司">中信国安信息产业股份有限公司</span>
+            </div>
+            <div class="gatRight fr">
+                <img src="img/icon_setting.png">
+                <img src="img/icon_boss.png">
+                <img src="img/icon_cspace.png">
+                <img src="img/icon_exit.png">
+            </div>
+        </div>
+        <div class="navbarbox clearfix">
+            <ul class="navul fl clearfix">
+                <li class="navli">工程概况</li>
+                <li class="navli opt">数字工地</li>
+                <li class="navli">智能分析</li>
+                <li class="navli">安全管理</li>
+                <li class="navli">绿色施工</li>
+            </ul>
+            <ul class="navul fr clearfix">
+                <li class="navli">质量管理</li>
+                <li class="navli">技术管理</li>
+                <li class="navli">生产管理</li>
+                <li class="navli">经营管理</li>
+                <li class="navli">党建工作</li>
+            </ul>
+        </div>
+        <div class="project">
+            <div class="projtxt1">智慧工地</div>
+            <div class="projtxt2" title="深圳市清华国际研究院第一期">深圳市清华国际研究院第一期</div>
+        </div>
+    </div>
+    <div class="infbox">
+        <ul class="inful clearfix">
+            <li class="infli arrow"></li>
+            <li class="infli">2D</li>
+            <li class="infli">3D</li>
+            <li class="infli pitch">数据总览</li>
+        </ul>
+        <div class="model-box"></div>
+        <div class="tower main-card">
+            <div class="chart-area">
+                <ul class="chart">
+                    <li>
+                        <div class="item-name">倾斜报警</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%">95</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-name">超载报警</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 37%">37</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-name">力矩报警</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 55%">55</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-name">风速报警</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 15%">15</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="card">
+                    <div class="num-box">
+                        <div class="value">42</div>
+                        <div class="label">今日吊次</div>
+                    </div>
+                </div>
+            </div>
+            <div class="common-title">塔机监控</div>
+        </div>
+        <div class="environment main-card">
+            <div class="chart-area">
+                <div class="pm2-5 card">
+                    <div class="text">
+                        <div class="value">18.0</div>
+                        <div class="units">ug/m³</div>
+                    </div>
+                </div>
+                <div class="tps card">
+                    <div class="text">
+                        <div class="value">17</div>
+                    </div>
+                </div>
+                <div class="pm10 card">
+                    <div class="text">
+                        <div class="value">19.7</div>
+                        <div class="units">ug/m³</div>
+                    </div>
+                </div>
+                <div class="noise card">
+                    <div class="text">
+                        <div class="value">58</div>
+                        <div class="units">db</div>
+                    </div>
+                </div>
+                <div class="chart"></div>
+            </div>
+            <div class="common-title">扬尘噪音监测</div>
+        </div>
+        <div class="personnel main-card">
+            <div class="chart-area">
+                <div class="cards-box">
+                    <div class="card">
+                        <div class="value">65</div>
+                        <div class="label">今日入场</div>
+                    </div>
+                    <div class="card">
+                        <div class="value">65</div>
+                        <div class="label">今日出场</div>
+                    </div>
+                </div>
+                <div class="chart"></div>
+            </div>
+            <div class="common-title">人员监测</div>
+        </div>
+        <div class="other-card1 main-card"></div>
+        <div class="other-card2 main-card"></div>
+        <div class="border-guard main-card">
+            <div class="chart-area">
+                <div class="chart"></div>
+                <div class="card">
+                    <div class="title">- 今日警情 -</div>
+                    <div class="num">1</div>
+                    <div class="status">一般</div>
+                </div>
+            </div>
+            <div class="common-title">临边防护</div>
+        </div>
+        <div class="pile-foundation main-card">
+            <div class="my-chart-box">
+                <ul class="my-chart">
+                    <li>
+                        <span>73.2%</span>
+                        <div class="bottom-area">
+                            <div class="col" style="height: 73px;"></div>
+                            <div class="text">桩身应力</div>
+                        </div>
+                    </li>
+                    <li class="alarm-status">
+                        <span>105.6%</span>
+                        <div class="bottom-area">
+                            <div class="col" style="height: 106px;"></div>
+                            <div class="text">轴力</div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>73.2%</span>
+                        <div class="bottom-area">
+                            <div class="col" style="height: 73px;"></div>
+                            <div class="text">压力</div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>93.2%</span>
+                        <div class="bottom-area">
+                            <div class="col" style="height: 93px;"></div>
+                            <div class="text">锚索拉力</div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>13.4%</span>
+                        <div class="bottom-area">
+                            <div class="col" style="height: 13px;"></div>
+                            <div class="text">水位</div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>39.5%</span>
+                        <div class="bottom-area">
+                            <div class="col" style="height: 40px;"></div>
+                            <div class="text">位移</div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>74.8%</span>
+                        <div class="bottom-area">
+                            <div class="col" style="height: 75px;"></div>
+                            <div class="text">沉降</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="alarm-line"></div>
+            </div>
+            <div class="common-title">基坑监测</div>
+        </div>
+        <div class="water-electricity main-card">
+            <div class="water">
+                <div class="card water-card">12155.11吨</div>
+                <div class="chart"></div>
+            </div>
+            <div class="electricity">
+                <div class="card electricity-card">55656.22吨</div>
+                <div class="chart"></div>
+            </div>
+            <div class="common-title">水电监测</div>
+        </div>
+        <div class="other-card3 main-card"></div>
+        <div class="other-card4 main-card"></div>
+        <div class="tool-box">
+            <span class="fullscreen"></span><span class="refresh"></span>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/echarts.min.js" type="text/javascript"></script>
+<script>
+    $(function () {
+        let timer = null;
+        // 各卡片元素的初始定位
+        const positionList = [
+            { left: 76, top: 70 },
+            { left: 20, top: 350 },
+            { left: 76, top: 630 },
+            { left: 200, top: '100%' },
+            { left: 1200, top: '100%' },
+            { left: 1326, top: 630 },
+            { left: 1382, top: 350 },
+            { left: 1326, top: 70 },
+            { left: 1200, top: -240 },
+            { left: 200, top: -240 }
+        ];
+        const fullScreenPositionList = [
+            { left: 95, top: 120 },
+            { left: 35, top: 440 },
+            { left: 95, top: 760 },
+            { left: 330, top: '100%' },
+            { left: 1125, top: '100%' },
+            { left: 1350, top: 760 },
+            { left: 1420, top: 440 },
+            { left: 1350, top: 120 },
+            { left: 1125, top: -241 },
+            { left: 330, top: -241}
+        ];
+        // 转动次数
+        window.count = 1;
+        
+        // autoRotate(positionList, interval = 3000);
+        function autoRotate(positionList) {
+            if (timer) clearInterval(timer);
+            const length = positionList.length;
+            timer = setInterval(() => {
+                if (window.count > length) {
+                    window.count = 1;
+                }
+                $('.main-card').each(function(i, item) {
+                    let j = window.count + i;
+                    if (j > length - 1) {
+                        j = j - length;
+                    }
+                    $(this).css({ left: positionList[j].left, top: positionList[j].top })
+                })
+                window.count++;
+            }, interval);
+
+            // 卡片悬停暂停轮播
+            $('.main-card').hover(function() {
+                clearInterval(timer);
+            }, function() {
+                // 会多次执行
+                console.log(1)
+                autoRotate(positionList);
+            });
+        };
+
+        initEcharts();
+        function initEcharts() {
+            const environmentEc = echarts.init(...$('.environment .chart'));
+            const personnelEc = echarts.init(...$('.personnel .chart'));
+            const waterEc = echarts.init(...$('.water .chart'));
+            const electricityEc = echarts.init(...$('.electricity .chart'));
+            const borderGuardEc = echarts.init(...$('.border-guard .chart'));
+            
+
+            const environmentOpt = {
+                tooltip : {
+                    formatter: "{a} <br/>{b} : {c}%"
+                },
+                grid: {
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    containLabel: false
+                },
+                series: [
+                    {
+                        name: 'AQI',
+                        type: 'gauge',
+                        max: 100,
+                        radius: '85%',
+                        startAngle: 135,
+                        endAngle: -135,
+                        axisLine: {
+                            lineStyle: {
+                                width: 20,
+                                color: [[0.2, '#1EDE8B'], [0.4, '#FEB113'], [0.6, '#F06743'], [0.8, '#CE2238'], [1, '#77240B']]
+                            }
+                        },
+                        splitLine: {
+                            length: 20,
+                            lineStyle: {
+                                color: '#fff',
+                                width: 1
+                            }
+                        },
+                        splitNumber: 5,
+                        axisTick: {
+                            length: 4,
+                            lineStyle: {
+                                color: '#fff'
+                            }
+                        },
+                        axisLabel: {
+                            color: '#0FEBFF',
+                            formatter: function (value) {
+                                if (value <= 20) {
+                                    return '优';
+                                } else if (value > 20 && value <=40) {
+                                    return '良'
+                                } else if (value > 40 && value <=60) {
+                                    return '轻'
+                                } else if (value > 60 && value <=80) {
+                                    return '重'
+                                }  else {
+                                    return '严重'
+                                }
+                            }
+                        },
+                        detail: {
+                            offsetCenter: ['-80%', '15%'],
+                            color: '#F06743',
+                            fontSize: 22,
+                            fontWeight: '700',
+                            formatter: '{value}'
+                        },
+                        pointer: {
+                            width: 3
+                        },
+                        markPoint:{
+                            symbol:'circle',
+                            symbolSize:5,
+                            data:[
+                                {x:'center',y:'center',itemStyle:{color:'#FFF'}}
+                            ]
+                        },
+                        data: [{value: 42, name: 'AQI'}],
+                        title: {
+                            offsetCenter: ['-80%', '-15%'],
+                            color: '#fff'
+                        }
+                    }
+                ]
+            };
+            const personnelOpt = {
+                grid: {
+                    left: 0,
+                    right: 0,
+                    top: 5,
+                    bottom: 5,
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['06:00', '9:00', '12:00', '15:00', '18:00'],
+                    axisLine: {
+                        lineStyle: {
+                            color: '#0FEBFF'
+                        }
+                    },
+                    axisTick: {
+                        show: false
+                    },
+                    axisLabel: {
+                        color: '#fff'
+                    }
+                },
+                yAxis: {
+                    type: 'value',
+                    axisLine: {
+                        lineStyle: {
+                            color: '#0FEBFF'
+                        }
+                    },
+                    axisLabel: {
+                        show: false
+                    },
+                    splitLine: {
+                        show: false
+                    },
+                    splitArea: { // 设置图表区域背景
+                        show: true,
+                        areaStyle: {
+                            color: ['rgba(4,93,147,0.7)']
+                        }
+                    }
+                },
+                color: ['#FFD050', '#4DF4B7'],
+                series: [
+                    {
+                        name: '今日入场',
+                        type: 'line',
+                        smooth: true,
+                        lineStyle: {
+                            normal: {
+                                width: 3,
+                                shadowColor: 'rgba(0,0,0,0.4)',
+                                shadowBlur: 10,
+                                shadowOffsetY: 10
+                            }
+                        },
+                        data:[10, 35, 25, 10, 35]
+                    },
+                    {
+                        name: '今日出场',
+                        type: 'line',
+                        smooth: true,
+                        lineStyle: {
+                            normal: {
+                                width: 3,
+                                shadowColor: 'rgba(0,0,0,0.4)',
+                                shadowBlur: 10,
+                                shadowOffsetY: 10
+                            }
+                        },
+                        data:[5, 40, 10, 20, 35]
+                    }
+                ]
+            };
+
+            const waterOpt = {
+                grid: {
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 0,
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['06:00', '9:00', '12:00', '15:00', '18:00'],
+                    axisLine: {
+                        show: false
+                    },
+                    axisTick: {
+                        show: false
+                    },
+                    axisLabel: {
+                        color: '#fff'
+                    }
+                },
+                yAxis: {
+                    type: 'value',
+                    axisLine: {
+                        show: false
+                    },
+                    axisTick: {
+                        show: false
+                    },
+                    axisLabel: {
+                        show: false
+                    },
+                    splitLine: {
+                        show: false
+                    },
+                    splitArea: { 
+                        show: true,
+                        areaStyle: {
+                            color: ['rgba(4,93,147,0.7)']
+                        }
+                    }
+                },
+                color: ['#0FEBFF'],
+                series: [
+                    {
+                        name: '水力消耗',
+                        type: 'line',
+                        smooth: true,
+                        lineStyle: {
+                            normal: {
+                                width: 3,
+                                shadowColor: 'rgba(0,0,0,0.4)',
+                                shadowBlur: 10,
+                                shadowOffsetY: 10
+                            }
+                        },
+                        data:[10, 35, 25, 10, 35]
+                    }
+                ]
+            };
+
+            const electricityOpt = {
+                grid: {
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 0,
+                    containLabel: true
+                },
+                xAxis: {
+                    show: false,
+                    type: 'category',
+                },
+                yAxis: {
+                    type: 'value',
+                    axisLine: {
+                        show: false
+                    },
+                    axisTick: {
+                        show: false
+                    },
+                    axisLabel: {
+                        show: false
+                    },
+                    splitLine: {
+                        show: false
+                    },
+                    splitArea: { 
+                        show: true,
+                        areaStyle: {
+                            color: ['rgba(4,93,147,0.7)']
+                        }
+                    }
+                },
+                color: ['#FFD050'],
+                series: [
+                    {
+                        name: '电力消耗',
+                        type: 'line',
+                        smooth: true,
+                        lineStyle: {
+                            normal: {
+                                width: 3,
+                                shadowColor: 'rgba(0,0,0,0.4)',
+                                shadowBlur: 10,
+                                shadowOffsetY: 10
+                            }
+                        },
+                        data:[5, 40, 10, 20, 35]
+                    }
+                ]
+            };
+            const borderGuardOpt = {
+                grid: {
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: '-11.5%',
+                    containLabel: true
+                },
+                xAxis: {
+                    show: false,
+                    type: 'category',
+                },
+                yAxis: {
+                    type: 'value',
+                    axisLine: {
+                        show: false
+                    },
+                    axisTick: {
+                        show: false
+                    },
+                    axisLabel: {
+                        show: false
+                    },
+                    splitLine: {
+                        show: false
+                    },
+                    splitArea: { 
+                        show: true,
+                        areaStyle: {
+                            color: ['rgba(3,59,86,0.4)']
+                        }
+                    }
+                },
+                series: [{
+                    name: '今日警情',
+                    type: 'scatter',
+                    symbolSize: 15,
+                    itemStyle: {
+                        color: '#15EF7B'
+                    },
+                    data: [
+                        [10.0, 8.04],
+                        [8.0, 6.95],
+                        [13.0, 7.58],
+                        [9.0, 8.81],
+                        [11.0, 8.33],
+                        [14.0, 9.96],
+                        {
+                            value: [6.0, 7.24],
+                            //自定义特殊 itemStyle，仅对该数据项有效
+                            itemStyle:{
+                                color: '#EF6215'
+                            }
+                        },
+                        [4.0, 4.26],
+                        [12.0, 10.84],
+                        [7.0, 4.82],
+                        [5.0, 5.68]
+                    ],
+                    
+                }]
+            };
+
+            environmentEc.setOption(environmentOpt);
+            personnelEc.setOption(personnelOpt);
+            waterEc.setOption(waterOpt);
+            electricityEc.setOption(electricityOpt);
+            borderGuardEc.setOption(borderGuardOpt);
+        };
+
+        // 全屏功能
+        (function () {
+            var triggerEle = document.querySelector(".fullscreen");
+            var targetEle = document.querySelector(".infbox");
+
+            fullscreen(targetEle, triggerEle)
+            function fullscreen(tarEle, triEle) {
+                // 任何元素都有全屏api，但目前并不是所有的浏览器都实现了API的无前缀版本
+                var reqFullscreen =
+                    tarEle.requestFullscreen ||
+                    tarEle.webkitRequestFullscreen ||
+                    tarEle.mozRequestFullScreen ||
+                    tarEle.msRequestFullscreen;
+                triEle.addEventListener('click', function () {
+                    if (reqFullscreen) {
+                        reqFullscreen.call(tarEle)
+                    } else {
+                        // ie11以下未支持
+                        window.confirm('您的浏览器版本过低,请升级版本或更换浏览器！')
+                    }
+                });
+            };
+
+            screenChange();
+            function screenChange() {
+                var methodName = getonfullscreenevt();
+                document[methodName] = function () {
+                    // 全屏模式下隐藏或显示元素
+                    if (isElementFullScreen()) {
+                        $('.infbox .inful').hide();
+                        $('.tool-box span:first-child').removeClass('fullscreen').addClass('scale-btn');
+                        clearInterval(timer);
+                        autoRotate(fullScreenPositionList, 0);
+                        // 退出全屏
+                        $('.scale-btn').on('click', function() {
+                            var root = document;
+                            var exitFullscreenEvts = ['exitFullscreen', 'webkitExitFullscreen', 'msExitFullscreen', 'mozCancelFullScreen'];
+                            exitFullscreenEvts.forEach(function(method) {
+                                if (root[method]) {
+                                    root[method]();
+                                }
+                            })
+                        });
+                    } else {
+                        $('.infbox .inful').show();
+                        $('.tool-box span:first-child').removeClass('scale-btn').addClass('fullscreen');
+                        clearInterval(timer);
+                        autoRotate(positionList, 0);
+                    }
+                }
+            }
+
+            // 获取兼容事件
+            function getonfullscreenevt() {
+                var root = document.documentElement
+                var fullscreenevts = {
+                    'requestFullscreen': 'onfullscreenchange',
+                    'webkitRequestFullscreen': 'onwebkitfullscreenchange',
+                    'mozRequestFullScreen': 'onmozfullscreenchange',
+                    'msRequestFullscreen': 'onmsfullscreenchange'
+                }
+                for (var method in fullscreenevts) {
+                    if (root[method]) {
+                        return fullscreenevts[method]
+                    }
+                }
+                return undefined
+            };
+
+            // 判断当前有无元素在全屏状态
+            function isElementFullScreen() {
+                var fullscreenElement =
+                    document.fullscreenElement ||
+                    document.msFullscreenElement ||
+                    document.mozFullScreenElement ||
+                    document.webkitFullscreenElement;
+                if (fullscreenElement === null) {
+                    return false;
+                } else {
+                    return true;
+                }
+            };
+        })();
+    })
+</script>

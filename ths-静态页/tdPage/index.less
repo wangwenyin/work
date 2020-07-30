@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1280px;
+    font-family: "宋体", "SourceHanSansCN", "Chinese Quote", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+
+body {
+    background: #F0F2F5;
+    #containner {
+        width:690px;
+        height:976px;
+        padding: 45px 70px 75px;
+        font-size: 13px;
+        color: #000;
+        background: #fff;
+        table {
+            width:100%;
+            border-left: 1px solid;
+            border-bottom: 1px solid;
+            td {
+                text-align: center;
+                border-top: 1px solid;
+                border-right: 1px solid;
+            }
+        }
+        input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid;
+            &.center {
+                text-align: center;
+            }
+        }
+        .input_width_340 {
+            width: 340px;
+        }
+        .input_width_280 {
+            width: 280px;
+        }
+        .input_width_100 {
+            width: 100px;
+        }
+        .input_width_60 {
+            width: 60px;
+        }
+        .input_width_45 {
+            width: 45px;
+        }
+        .input_width_30 {
+            width: 30px;
+        }
+        header {
+            width: 365px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 38px;
+            font-size: 26px;
+            font-family:'黑体';
+        }
+        section.content {
+            margin-top: 15px;
+            padding: 0 5px;
+            .num {
+                margin-bottom: 10px;
+                text-align: right;
+            }
+            .top-table {
+                td {
+                    height: 31px;
+                    .sm-fs {
+                        display: inline-block;
+                        transform: scale(.8);
+                        white-space: nowrap;
+                    }
+                }
+            }
+            .title {
+                margin-top: 5px;
+                text-indent: 2em;
+                font-size: 13px;
+                font-weight: normal;
+            }
+            .mylist {
+                padding-left: 15px;
+                li {
+                    height: 20px;
+                    input {
+                        height: 100%;
+                    }
+                }
+            }
+            .roles {
+                text-indent: 2em;
+                margin: 5px 0;
+                line-height: 22px;
+                
+            }
+            p.bf {
+                margin: 5px 0 25px;
+                line-height: 20px;
+                text-indent: 2em;
+                letter-spacing: 1px;
+            }
+            .signature, .contact {
+                > div {
+                    margin-top: 5px;
+                }
+            }
+            .seal {
+                margin-top: 28px;
+                text-align: right;
+                input {
+                    width: 30px;
+                    border: none;
+                }
+            }
+        }
+        footer {
+            .bottom-table {
+                td {
+                    height: 23px;
+                }
+            }
+        }
+    }
+}
+
+// 打开即可隐藏文字部分
+// .hidden,
+// .roles span {
+//     visibility: hidden;
+// }
+
+// #containner .top-table,
+// #containner .bottom-table,
+// #containner .top-table td,
+// #containner .bottom-table td,
+// #containner input {
+//     border: none !important;
+// }
+
+// .mylist li {
+//     list-style: none;
+// }

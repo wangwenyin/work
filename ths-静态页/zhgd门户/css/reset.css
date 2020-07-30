@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1280px;
+    font-family: "SourceHanSansCN", "Chinese Quote", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    color: #444B55;
+    font-size: 16px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+fieldset,
+img {
+    display: block;
+    border: 0
+}
+
+input, textarea {
+    outline: none;
+}
+
+a {
+    color: #444B55;
+    text-decoration: none;
+}
+
+hr {
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #E4E4E4;
+    border-width: 1px 0;
+    clear: both;
+    height: 2px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.width_1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::before, 
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}

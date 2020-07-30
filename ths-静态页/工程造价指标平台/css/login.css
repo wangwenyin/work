@@ -1,0 +1,161 @@
+#containner .login-header .login-header-top {
+  height: 30px;
+  line-height: 30px;
+  background-color: #fafafa;
+}
+#containner .login-header .login-header-top .login-header-top-inner a {
+  float: right;
+  margin-left: 35px;
+}
+#containner .login-header .login-header-top .login-header-top-inner a:hover {
+  color: #3587ff;
+}
+#containner .login-header .login-header-bottom {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+#containner .login-header .login-header-bottom .logo {
+  height: 60px;
+  line-height: 60px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 65px;
+  background-image: url(../images/logo.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 65px;
+}
+#containner .login-header .login-header-bottom .nav {
+  display: flex;
+}
+#containner .login-header .login-header-bottom .nav li {
+  margin-left: 45px;
+}
+#containner .login-header .login-header-bottom .nav li:first-child {
+  margin-left: 70px;
+}
+#containner .login-header .login-header-bottom .nav li a:hover {
+  color: #3587ff;
+}
+#containner .main {
+  height: calc(100vh - 350px);
+  min-height: 350px;
+  background-image: url(../images/login_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#containner .main .main-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#containner .main .main-inner .login-box {
+  width: 400px;
+  background: #fff;
+}
+#containner .main .main-inner .login-box .title {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 22px;
+  color: #3587FF;
+  border-bottom: 1px solid #3587FF;
+}
+#containner .main .main-inner .login-box form {
+  padding: 30px;
+  padding-top: 0;
+  overflow: hidden;
+}
+#containner .main .main-inner .login-box form input {
+  width: 100%;
+  height: 52px;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #666;
+  border: 1px solid #eee;
+}
+#containner .main .main-inner .login-box form input::placeholder {
+  font-size: 14px;
+  color: #999999;
+}
+#containner .main .main-inner .login-box form input:focus {
+  outline: 1px solid rgba(50, 130, 250, 0.5);
+}
+#containner .main .main-inner .login-box form .username,
+#containner .main .main-inner .login-box form .password {
+  margin-top: 30px;
+  padding-left: 52px;
+  background-repeat: no-repeat;
+}
+#containner .main .main-inner .login-box form .username {
+  background-image: url(../images/username.png);
+}
+#containner .main .main-inner .login-box form .password {
+  background-image: url(../images/password.png);
+}
+#containner .main .main-inner .login-box form .forgetPwd {
+  margin: 15px 0;
+  overflow: hidden;
+}
+#containner .main .main-inner .login-box form .forgetPwd a {
+  float: right;
+  color: #3587FF;
+}
+#containner .main .main-inner .login-box form .forgetPwd a:hover {
+  text-decoration: underline;
+}
+#containner .main .main-inner .login-box form .login-btn {
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3587ff;
+  cursor: pointer;
+}
+#containner .footer .footer-top {
+  background-color: #f7f8fa;
+  color: #3D3D3D;
+}
+#containner .footer .footer-top .footer-top-inner {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+#containner .footer .footer-top .footer-top-inner ul li {
+  margin-bottom: 10px;
+}
+#containner .footer .footer-top .footer-top-inner ul li a:hover {
+  color: #3587FF;
+}
+#containner .footer .footer-top .footer-top-inner ul li:first-child {
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+#containner .footer .footer-top .footer-top-inner .WeChat .qr-code {
+  width: 120px;
+  height: 120px;
+  background-image: url(../images/wechat.png);
+  background-repeat: no-repeat;
+}
+#containner .footer .footer-top .footer-top-inner .WeChat p {
+  margin-top: 5px;
+  text-align: center;
+}
+#containner .footer .footer-bottom {
+  background-color: #666666;
+  font-size: 13px;
+  color: #C1C1C1;
+  text-align: center;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+#containner .footer .footer-bottom p {
+  margin-top: 10px;
+}

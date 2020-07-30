@@ -1,0 +1,76 @@
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.containner {
+  width: 656px;
+  margin: 100px auto;
+}
+.containner .add-btn {
+  overflow: hidden;
+}
+.containner .add-btn span {
+  float: right;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  color: #4d94e2;
+  cursor: pointer;
+  position: relative;
+}
+.containner .add-btn span::before {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  content: '+';
+  color: #4d94e2;
+  font-size: 18px;
+}
+.containner .stage-box {
+  position: relative;
+  border-left: 4px solid #ccc;
+}
+.containner .stage-box .default-stage {
+  float: right;
+  width: 610px;
+  height: 140px;
+  margin-bottom: 20px;
+  background: #eee;
+  position: relative;
+  counter-increment: slideNum;
+}
+.containner .stage-box .default-stage .del {
+  float: right;
+  margin: 5px 5px 0 0;
+  color: #4d94e2;
+  font-size: 16px;
+  cursor: pointer;
+}
+.containner .stage-box .default-stage::after {
+  position: absolute;
+  left: -60px;
+  top: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: counter(slideNum);
+  line-height: 24px;
+  text-align: center;
+  color: #999;
+  border: 4px solid #ccc;
+  border-radius: 50%;
+  background: #fff;
+}
+.containner .stage-box::before {
+  position: absolute;
+  left: -12px;
+  bottom: -15px;
+  display: block;
+  width: 0;
+  height: 0;
+  content: '';
+  border-top: 20px solid #ccc;
+  border-left: transparent 10px solid;
+  border-right: transparent 10px solid;
+}
