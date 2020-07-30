@@ -1,0 +1,124 @@
+#containner #content {
+  display: flex;
+  padding-bottom: 60px;
+}
+#containner #content .pdf-area {
+  flex: 1;
+}
+#containner #content .pdf-area .pdf-header {
+  margin-bottom: 10px;
+}
+#containner #content .pdf-area .pdf-header h2 {
+  color: #333;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+#containner #content .pdf-area .pdf-header .pdf-info {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+#containner #content .pdf-area .pdf-header .pdf-info span:first-child {
+  margin-right: 45px;
+}
+#containner #content .pdf-area .pdf-header .share-box {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+#containner #content .pdf-area .pdf-header .share-box .app-icons {
+  display: flex;
+}
+#containner #content .pdf-area .pdf-header .share-box .app-icons .icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+#containner #content .pdf-area .pdf-header .share-box .app-icons .icon.qq {
+  background-image: url(../images/QQ.png);
+}
+#containner #content .pdf-area .pdf-header .share-box .app-icons .icon.wb {
+  background-image: url(../images/wb.png);
+}
+#containner #content .pdf-area .pdf-header .share-box .app-icons .icon.wx {
+  background-image: url(../images/wx.png);
+}
+#containner #content .pdf-area .pdf-header .share-box .app-icons .icon.more {
+  background-image: url(../images/more.png);
+}
+#containner #content .pdf-area .pdf-content {
+  height: 1200px;
+  background: #eee;
+}
+#containner #content .recommend-box {
+  position: relative;
+  width: 226px;
+  height: 1200px;
+  margin-left: 68px;
+  margin-top: 85px;
+  overflow: hidden;
+}
+#containner #content .recommend-box .recommend-inner {
+  position: relative;
+  top: 0;
+  padding-top: 32px;
+  transition: top 1s;
+}
+#containner #content .recommend-box .recommend-inner .book-box {
+  margin-bottom: 50px;
+}
+#containner #content .recommend-box .recommend-inner .book-box img {
+  width: 226px;
+  height: 317px;
+}
+#containner #content .recommend-box .recommend-inner .book-box .month {
+  margin-top: 10px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+#containner #content .recommend-box .recommend-inner .book-box:nth-child(3n + 2) img {
+  border: 3px solid #8c4e7f;
+  box-shadow: 0px 0px 10px 0px #8c4e7f;
+}
+#containner #content .recommend-box .recommend-inner .book-box:hover:not(:nth-child(3n + 2)) img {
+  transform: scale(1.08);
+}
+#containner #content .recommend-box .btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 0px 10px 0px rgba(17, 18, 19, 0.3);
+  opacity: 0.9;
+  cursor: pointer;
+}
+#containner #content .recommend-box .btn:hover {
+  background-color: #8C4E7F;
+  box-shadow: 0px 0px 10px 0px rgba(140, 78, 127, 0.3);
+}
+#containner #content .recommend-box .btn.arrow-up {
+  top: 0;
+  background-image: url(../images/arrow-up.png);
+}
+#containner #content .recommend-box .btn.arrow-up:hover {
+  background-image: url(../images/arrow-up-h.png);
+}
+#containner #content .recommend-box .btn.arrow-down {
+  bottom: 0;
+  background-image: url(../images/arrow-down.png);
+}
+#containner #content .recommend-box .btn.arrow-down:hover {
+  background-image: url(../images/arrow-down-h.png);
+}

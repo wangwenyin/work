@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  max-width: 750px;
+  margin: 0 auto;
+  height: 100%;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px !important;
+  }
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "PingFang SC", "SourceHanSansCN", "Microsoft YaHei", "Chinese Quote", "Helvetica Neue", sans-serif;
+  color: #666;
+  font-size: 0.3rem;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+input::placeholder {
+  color: #999;
+  font: 0.28rem 'PingFang SC';
+}
+fieldset,
+img {
+  border: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+hr {
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #E4E4E4;
+  border-width: 1px 0;
+  clear: both;
+  height: 2px;
+  margin: 5px 0;
+  overflow: hidden;
+}
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.tabbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  height: 0.98rem;
+  background-color: #fff;
+  box-shadow: 0px -1px 0px 0px #8c4e7f;
+}
+.tabbar .tab {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  padding-top: 0.12rem;
+  flex-direction: column;
+  align-items: center;
+}
+.tabbar .tab .text {
+  margin-top: 0.02rem;
+  font-size: 0.22rem;
+  color: #999;
+}
+.tabbar .tab:first-child img {
+  width: 0.42rem;
+  height: 0.46rem;
+}
+.tabbar .tab:last-child img {
+  width: 0.48rem;
+  height: 0.43rem;
+}
+.tabbar .tab.active .text {
+  color: #8C4E7F;
+}
+.common-list {
+  padding-bottom: 0.98rem;
+}
+.common-list .list-item {
+  background-color: #fff;
+  margin-top: 0.2rem;
+  padding: 0.2rem;
+}
+.common-list .list-item:first-child {
+  margin-top: 0;
+}
+.common-list .list-item .top {
+  display: flex;
+  justify-content: space-between;
+}
+.common-list .list-item .top span:first-child {
+  color: #333;
+  font-size: 0.32rem;
+  font-weight: bold;
+}
+.common-list .list-item .top span:last-child {
+  color: #999;
+  font-size: 0.26rem;
+}
+.common-list .list-item .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.18rem;
+}
+.common-list .list-item .bottom .right-info .tag {
+  display: inline-block;
+  vertical-align: middle;
+  height: 0.28rem;
+  line-height: 0.28rem;
+  padding: 0 0.04rem;
+  margin-right: 0.09rem;
+  font-size: 0.2rem;
+  color: #F3732E;
+  background: #fff7f2;
+  border: 1px solid #f3732e;
+  border-radius: 0.02rem;
+}
+.common-list .list-item .bottom .right-info .tag .text {
+  display: inline-block;
+  transform: scale(0.8);
+}
+.common-list .list-item .bottom .right-info .info {
+  color: #999;
+  font-size: 0.26rem;
+}
+.common-list .list-item .bottom .right-info .info .value {
+  color: #F3732E;
+  font-size: 0.3rem;
+}

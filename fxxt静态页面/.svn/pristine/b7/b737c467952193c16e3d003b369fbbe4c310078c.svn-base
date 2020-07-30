@@ -1,0 +1,11 @@
+#containner {
+    #content {
+        padding-bottom: 60px;
+        .trend-chart {
+            height: 572px;
+        }
+        .common-table {
+            margin-top: 30px;
+        }
+    }
+}

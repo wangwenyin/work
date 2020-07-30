@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  max-width: 750px;
+  margin: 0 auto;
+  height: 100%;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px !important;
+  }
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "PingFang SC", "SourceHanSansCN", "Microsoft YaHei", "Chinese Quote", "Helvetica Neue", sans-serif;
+  color: #666;
+  font-size: 0.3rem;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+fieldset,
+img {
+  border: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+hr {
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #E4E4E4;
+  border-width: 1px 0;
+  clear: both;
+  height: 2px;
+  margin: 5px 0;
+  overflow: hidden;
+}
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}

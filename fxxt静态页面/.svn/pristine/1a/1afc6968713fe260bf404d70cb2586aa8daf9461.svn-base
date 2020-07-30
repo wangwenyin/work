@@ -1,0 +1,48 @@
+.search-bar .search-box {
+  display: flex;
+  align-items: center;
+  padding: 0.1rem 0.2rem;
+  background-color: #8C4E7F;
+}
+.search-bar .search-box .sys-name {
+  width: 1.2rem;
+  margin-right: 0.2rem;
+  color: #fff;
+  font-weight: 500;
+}
+.search-bar .search-box input {
+  flex: 1;
+  height: 0.68rem;
+  padding-left: 0.61rem;
+  padding-right: 0.3rem;
+  background-color: #fff;
+  border-radius: 0.34rem;
+  background-image: url(../images/search.png);
+  background-repeat: no-repeat;
+  background-position: 0.2rem center;
+  background-size: 0.32rem;
+}
+.search-bar .select-box .weui-cells {
+  display: flex;
+  align-items: center;
+  height: 0.8rem;
+  margin-top: 0;
+  font-size: 0.28rem;
+  color: #333;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.26);
+}
+.search-bar .select-box .weui-cells .weui-cell {
+  flex: 1;
+}
+.search-bar .select-box .weui-cells .weui-cell .weui-cell__bd {
+  flex: auto;
+  text-align: center;
+}
+.search-bar .select-box .weui-cells .weui-cell .weui-cell__ft {
+  width: 0.23rem;
+  height: 0.13rem;
+  background: url(../images/arrow-down.png) no-repeat center / cover;
+}
+.search-bar .select-box .weui-cells .weui-cell .weui-cell__ft::after {
+  display: none;
+}

@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+.page-box .pages {
+    float: right;
+}
+
+.pages #Pagination {
+    float: left;
+    overflow: hidden
+}
+
+.pages #Pagination .pagination {
+    text-align: right
+}
+
+.pages #Pagination .pagination a,
+.pages #Pagination .pagination span {
+    float: left;
+    display: inline;
+    padding: 8px 12px;
+    border: 1px solid #eee;
+    background: #fff;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 6px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px
+}
+
+.pages #Pagination .pagination a:hover {
+    background: #8B4D7F;
+    color: #fff
+}
+
+.pages #Pagination .pagination .current {
+    background: #8B4D7F;
+    color: #fff
+}
+
+.pages #Pagination .pagination .prev,
+.pages #Pagination .pagination .next {
+    float: left;
+    padding: 8px 12px;
+    border: 1px solid #eee;
+    background: #fff;
+    color: #666;
+    cursor: pointer;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px
+}
+
+.pages #Pagination .pagination .prev:hover,
+.pages #Pagination .pagination .next:hover {
+    background: #8B4D7F;
+    color: #fff
+}
+
+.pages #Pagination .pagination .pagination-break {
+    padding: 0px 10px;
+    border: none;
+    background: none;
+    cursor: default
+}
+
+.pages .searchPage {
+    float: left
+}
+
+.pages .searchPage .page-sum {
+    padding: 8px 12px;
+    color: #999;
+    font-size: 14px
+}
+
+.pages .searchPage .page-sum strong {
+    font-weight: lighter
+}
+
+.pages .searchPage .page-go {
+    padding: 8px 20px;
+    color: #999;
+    font-size: 14px
+}
+
+.pages .searchPage .page-go input {
+    width: 34px;
+    height: 34px;
+    padding-left: 5px;
+    border: 1px solid #eee;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin: 0 5px;
+    text-align: center
+}
+
+.pages .searchPage .page-btn {
+    padding: 8px 12px;
+    background: #8B4D7F;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none
+}
+
+/*表格总条数*/
+.select-style {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    color: #8B4D7F
+}
+
+
+/*分页*/
+.page-box select {
+    height: 32px;
+    margin: 0 5px;
+    padding: 0 5px 0 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    color: #8B4D7F;
+    width: 50px;
+}
+
+.page-box {
+    overflow: hidden;
+    padding: 0 0 20px;
+    color: #999;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.page-box .total {
+    float: left;
+    font-size: 14px;
+    color: #999;
+}
+
+.page-box .page {
+    float: right;
+    margin-right: 13px;
+}
+
+.page-box .page a {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 7px;
+    padding: 0 11px;
+    border-radius: 2px;
+    border: 1px solid #eee;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
+
+.page-box .page a:hover {
+    border-color: #73c8f9;
+    color: #37af4e;
+    text-decoration: none;
+}
+
+.page-box .page .cur {
+    background-color: #8B4D7F;
+    border-color: #8B4D7F;
+    color: #fff;
+    font-weight: bold;
+}
+
+.page-box .page .cur:hover {
+    background-color: #37af4e;
+    border-color: #37af4e;
+    color: #fff;
+    font-weight: bold;
+}
+
+.page-box .page em {
+    padding-right: 7px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.page-box .page span {
+    padding-right: 7px;
+    color: #666;
+}
+
+.page-box .page .number {
+    position: relative\0;
+    top: 3px\0;
+    width: 38px;
+    margin-right: 7px;
+    padding: 3px 0;
+    padding: 3px 0 8px\0;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    text-align: center;
+    color: #999;
+    height: 25px;
+}
+
+.page-box .page .confirm {
+    background-color: #8B4D7F;
+    border-color: #8B4D7F;
+    color: #fff;
+}
+
+.page-box .page .confirm:hover {
+    background-color: #37af4e;
+    border-color: #37af4e;
+    color: #fff;
+}
+
+/* 期数选择框 */
+.nper {
+    display: flex;
+    align-items: center;
+}
+
+.nper-ul,
+.nper-d,
+.nper-ul-ul {
+    float: left;
+    display: inline-block
+}
+
+.nper-li,
+.nper-span,
+.nper-ul-li {
+    float: left
+}
+
+.nper-li-select {
+    border: solid 1px #ddd;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: url(../images/icon-xuanze.png);
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    background-position: 96%;
+    color: #555555;
+    padding-left: 10px;
+    width: 200px;
+    height: 28px;
+    border-radius: 3px;
+    line-height: 28px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.nper-ul:hover .nper-li-year,
+.nper-ul:hover .nper-li-month {
+    display: list-item;
+}
+
+.nper-li-year {
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: #ffffff;
+    border: solid 1px #EAEAEA;
+    height: 25px;
+    line-height: 25px;
+    box-sizing: border-box;
+}
+
+.nper-li-d {
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    height: 26px;
+    position: relative
+}
+
+.nper-ul-li {
+    width: 40px
+}
+
+.nper-ul-li>a:hover {
+    color: #8B4D7F;
+}
+
+.nper-left {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/icon-xuanze.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    top: 8px;
+}
+
+.nper-right {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/icon-xuanze.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 0;
+    top: 8px;
+    cursor: pointer;
+}
+
+.nper-li-d1 {
+    width: 158px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 15px;
+}
+
+.nper-li-month {
+    margin-top: 25px;
+    width: 200px;
+    position: absolute;
+    background-color: #ffffff;
+    border: solid 1px #EAEAEA;
+    display: none;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+.nper-month-d {
+    display: none;
+    max-height: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-y: auto
+}
+
+.nper-month-d>a {
+    display: block;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.nper-month-d>a:hover {
+    color: #ffffff;
+    background-color: #8B4D7F
+}
+
+.nper-select-txt {
+    display: block;
+    width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}

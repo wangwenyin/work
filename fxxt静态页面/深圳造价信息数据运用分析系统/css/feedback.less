@@ -1,0 +1,61 @@
+#containner {
+    #content {
+        position: relative;
+        h2 {
+            margin: 40px 0;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #8C4E7F;
+        }
+        form {
+            width: 700px;
+            margin: 0 auto;
+            .form-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+                .label {
+                    display: inline-block;
+                    min-width: 72px;
+                    color: #333;
+                    margin-right: 10px;
+                    text-align: right;
+                }
+                .input-text, textarea {
+                    width: calc(~"100% - 82px");
+                    font-size: 14px;
+                    font-family:Source Han Sans CN;
+                    color: #666;
+                    border:1px solid rgba(234,234,234,1);
+                    border-radius:4px;
+                }
+                .input-text {
+                    height: 30px;
+                    padding-left: 10px;
+                }
+                textarea {
+                    height: 230px;
+                    padding: 10px;
+                }
+            }
+            .submit {
+                width: 350px;
+                height: 45px;
+                line-height: 45px;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+                background: #8C4E7F;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+        }
+        .feedback-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}

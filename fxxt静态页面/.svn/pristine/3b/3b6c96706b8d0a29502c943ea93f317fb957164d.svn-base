@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/pagination.css">
+    <link rel="stylesheet" href="./css/cost-index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="containner">
+        <div class="header">
+            <div class="header-inner width_1200">
+                <div class="logo"><a href="#">深圳市建设工程造价指标数据应用平台</a></div>
+                <ul class="about-user">
+                    <li class="highlight"><a href="javascript::void(0)">请登录</a></li>
+                    <li class="highlight"><a href="#">免费注册</a></li>
+                    <li>
+                        <a href="#">我的消息（0）</a>
+                        <div class="message">6</div>
+                    </li>
+                    <li><a href="#">用户中心</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul class="nav width_1200">
+                <li><a href="./price-info.html">价格信息</a></li>
+                <li class="active"><a href="#">造价指数</a></li>
+            </ul>
+        </div>
+        <div class="breadcrumb width_1200">
+            当前位置：<a href="#" class="cur">造价指数</a><a href="#">2020年3月</a>
+        </div>
+        <div id="content" class="width_1200">
+            <div class="select-box">
+                <div class="nper">
+                    <span class="nper-span">期数：</span>
+                    <ul class="nper-ul">
+                        <li class="nper-li-select"><span class="nper-select-txt"
+                                periedcode="2f3d10ed-45dc-4c9a-8601-3bfb5a41c077"
+                                title="广州市2018年12月信息价">广州市2018年12月信息价</span></li>
+                        <li class="nper-li-year">
+                            <div class="nper-li-d">
+                                <a class="nper-left nper-span"></a>
+                                <div class="nper-li-d1">
+                                    <ul class="nper-ul-ul" id="infoPricePeriod" style="width: 500px;">
+                                        <li year="2010" style="display:block;" class="nper-ul-li"><a
+                                                href="javascript:;" year="2010">2010</a></li>
+                                        <li year="2011" style="display:block;" class="nper-ul-li"><a
+                                                href="javascript:;" year="2011">2011</a></li>
+                                        <li year="2012" style="display:block;" class="nper-ul-li"><a
+                                                href="javascript:;" year="2012">2012</a></li>
+                                        <li year="2013" style="display:block;" class="nper-ul-li"><a
+                                                href="javascript:;" year="2013">2013</a></li>
+                                        <li year="2014" style="display:block;" class="nper-ul-li"><a
+                                                href="javascript:;" year="2014">2014</a></li>
+                                        <li year="2015" style="display:block;" class="nper-ul-li"><a
+                                                href="javascript:;" year="2015">2015</a></li>
+                                        <li year="2016" style="display:block;" class="nper-ul-li"><a
+                                                href="javascript:;" year="2016">2016</a></li>
+                                        <li year="2017" style="display:block;" class="nper-ul-li"><a
+                                                href="javascript:;" year="2017">2017</a></li>
+                                        <li year="2018" style="display:block;" class="nper-ul-li"><a
+                                                href="javascript:;" year="2018">2018</a></li>
+                                        <li year="2019" style="display:block;" class="nper-ul-li"><a
+                                                href="javascript:;" year="2019">2019</a></li>
+                                        <li year="2020" style="display:block;" class="nper-ul-li"><a
+                                                href="javascript:;" year="2020">2020</a></li>
+                                    </ul>
+                                </div>
+                                <a class="nper-right">&gt;</a>
+                            </div>
+                        </li>
+                        <li class="nper-li-month">
+                            <div class="nper-month-d" style="display: block;"><a href="javascript:;"
+                                    style="display:block;" idvalue="219845" title="广州市2020年4月信息价"
+                                    code="70d5c342-e6dc-4b30-ba6e-2c2b8ffa8156" year="2020" area=""
+                                    industry="001001">广州市2020年4月信息价</a><a href="javascript:;"
+                                    style="display:block;" idvalue="219615" title="广州市2020年3月信息价"
+                                    code="92698250-d5c1-4bbf-9483-44f7487907c9" year="2020" area=""
+                                    industry="001001">广州市2020年3月信息价</a><a href="javascript:;"
+                                    style="display:block;" idvalue="219526" title="广州市2020年2月信息价"
+                                    code="ce972a1a-f535-4e84-92f1-265d4e12b7c5" year="2020" area=""
+                                    industry="001001">广州市2020年2月信息价</a><a href="javascript:;"
+                                    style="display:block;" idvalue="219290" title="广州市2020年1月信息价"
+                                    code="c464066c-7944-4117-aa92-1efb6f1e87b5" year="2020" area=""
+                                    industry="001001">广州市2020年1月信息价</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <table class="common-table">
+                <thead>
+                    <th>类别</th>
+                    <th>项目</th>
+                    <th>2020年1月</th>
+                    <th>2020年2月</th>
+                    <th>2020年3月</th>
+                    <th>2020年4月</th>
+                    <th>历史趋势</th>
+                    <th>反馈</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="5">市政工程</td>
+                        <td>高架桥工程</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td><a href="#" class="trend"></a></td>
+                        <td><a href="#" class="feedback"></a></td>
+                    </tr>
+                    <tr>
+                        <td>给水管道工程</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td><a href="#" class="trend"></a></td>
+                        <td><a href="#" class="feedback"></a></td>
+                    </tr>
+                    <tr>
+                        <td>道路工程（混泥土路面）</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td><a href="#" class="trend"></a></td>
+                        <td><a href="#" class="feedback"></a></td>
+                    </tr>
+                    <tr>
+                        <td>道路工程(沥青砼路面)</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td><a href="#" class="trend"></a></td>
+                        <td><a href="#" class="feedback"></a></td>
+                    </tr>
+                    <tr>
+                        <td>排水管道工程</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td><a href="#" class="trend"></a></td>
+                        <td><a href="#" class="feedback"></a></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6" class="gray-bg">建安工程</td>
+                        <td>多层住宅</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td><a href="#" class="trend"></a></td>
+                        <td><a href="#" class="feedback"></a></td>
+                    </tr>
+                    <tr>
+                        <td>高层住宅</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td><a href="#" class="trend"></a></td>
+                        <td><a href="#" class="feedback"></a></td>
+                    </tr>
+                    <tr>
+                        <td>多层写字楼</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td><a href="#" class="trend"></a></td>
+                        <td><a href="#" class="feedback"></a></td>
+                    </tr>
+                    <tr>
+                        <td>高层写字楼</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td><a href="#" class="trend"></a></td>
+                        <td><a href="#" class="feedback"></a></td>
+                    </tr>
+                    <tr>
+                        <td>工业建筑安装</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td><a href="#" class="trend"></a></td>
+                        <td><a href="#" class="feedback"></a></td>
+                    </tr>
+                    <tr>
+                        <td>公共建筑</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td><a href="#" class="trend"></a></td>
+                        <td><a href="#" class="feedback"></a></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">工程材料费指数</td>
+                        <td>排水管道工程</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td><a href="#" class="trend"></a></td>
+                        <td><a href="#" class="feedback"></a></td>
+                    </tr>
+                    <tr>
+                        <td>排水管道工程</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td>169.06</td>
+                        <td><a href="#" class="trend"></a></td>
+                        <td><a href="#" class="feedback"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            <div class="footer-inner">
+                <p>粤ICP备 15068125号 2019 深圳市建设工程造价管理站 版权所有</p>
+                <p style="margin-top: 10px;">技术支持：深圳市斯维尔科技股份有限公司</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(function () {
+       
+    })
+</script>
+
+
+</html>

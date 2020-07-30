@@ -1,0 +1,130 @@
+#containner {
+    #content {
+        display: flex;
+        padding-bottom: 60px;
+        .pdf-area {
+            flex: 1;
+            .pdf-header {
+                margin-bottom: 10px;
+                h2 {
+                    color: #333;
+                    font-size: 22px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+                .pdf-info {
+                    margin-top: 10px;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #999;
+                    span:first-child {
+                        margin-right: 45px;
+                    }
+                }
+                .share-box {
+                    float: right;
+                    display: flex;
+                    align-items: center;
+                    .app-icons {
+                        display: flex;
+                        .icon {
+                            width: 20px;
+                            height: 20px;
+                            margin-left: 10px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            cursor: pointer;
+                            &.qq {
+                                background-image: url(../images/QQ.png);
+                            }
+                            &.wb {
+                                background-image: url(../images/wb.png);
+                            }
+                            &.wx {
+                                background-image: url(../images/wx.png);
+                            }
+                            &.more {
+                                background-image: url(../images/more.png);
+                            }
+                        }
+                    }
+                }
+            }
+            .pdf-content {
+                height: 1200px;
+                background: #eee;
+            }
+        }
+        .recommend-box {
+            position: relative;
+            width: 226px;
+            height: 1200px;
+            margin-left: 68px;
+            margin-top: 85px;
+            overflow: hidden;
+            .recommend-inner {
+                position: relative;
+                top: 0;
+                padding-top: 32px;
+                transition: top 1s;
+                .book-box {
+                    margin-bottom: 50px;
+                    img {
+                        width:226px;
+                        height:317px;
+                    }
+                    .month {
+                        margin-top: 10px;
+                        text-align: center;
+                        color: #666;
+                        font-size: 14px;
+                    }
+                    &:nth-child(3n + 2) {
+                        img {
+                            border:3px solid rgba(140,78,127,1);
+                            box-shadow:0px 0px 10px 0px rgba(140,78,127,1);
+                        }
+                    }
+                    &:hover:not(:nth-child(3n + 2)) {
+                        img {
+                            transform: scale(1.08);
+                        }
+                    }
+                }
+            }
+            .btn {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 63px;
+                height: 63px;
+                border-radius: 50%;
+                background-color:#fff;
+                background-repeat: no-repeat;
+                background-position: center;
+                box-shadow:0px 0px 10px 0px rgba(17,18,19,0.3);
+                opacity: .9;
+                cursor: pointer;
+                &:hover {
+                    background-color: #8C4E7F;
+                    box-shadow:0px 0px 10px 0px rgba(140,78,127,0.3);
+                }
+                &.arrow-up {
+                    top: 0;
+                    background-image: url(../images/arrow-up.png);
+                    &:hover {
+                        background-image: url(../images/arrow-up-h.png);
+                    }
+                }
+                &.arrow-down {
+                    bottom: 0;
+                    background-image: url(../images/arrow-down.png);
+                    &:hover {
+                        background-image: url(../images/arrow-down-h.png);
+                    }
+                }
+            }
+        }
+    }
+}

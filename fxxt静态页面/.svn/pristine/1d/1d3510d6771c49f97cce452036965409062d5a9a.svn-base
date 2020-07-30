@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/price-info.css">
+    <link rel="stylesheet" href="./css/weui.min.css" />
+    <title>Document</title>
+</head>
+<body> 
+    <header class="search-bar">
+        <div class="search-box">
+            <span class="sys-name"></span>
+            <input type="text" placeholder="请输入材料设备名称或规格型号">
+        </div>
+        <div class="reject-box">
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access reject-steps" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <p>所属类别</p>
+                    </div>
+                    <div class="weui-cell__ft"></div>
+                </a>
+                <a class="weui-cell weui-cell_access date-picker" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <p>2020年</p>
+                    </div>
+                    <div class="weui-cell__ft"></div>
+                </a>
+                <a class="weui-cell weui-cell_access date-picker" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <p>04月</p>
+                    </div>
+                    <div class="weui-cell__ft"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="login-box">
+        <div class="input-box">
+            <input type="text" placeholder="请输入手机号">
+            <div class="user icon"></div>
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="请输入验证码">
+            <div class="pwd icon"></div> 
+            <div class="getcode">获取验证码</div>
+        </div>
+        <div class="login-btn">立即登录</div>
+    </section>
+    <footer>Copyright @2020 深圳市建设工程造价管理站</footer>
+</body>
+</html>
+<script type="text/javascript" src="./js/rem.js"></script>
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<!-- 最新weuijs的datePicker有问题,需用老版本 -->
+<script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.1.3/weui.js"></script>
+<script>
+    // 设置日期
+    setDate();
+    function setDate() {
+        var dateEle = $('.date-picker .weui-cell__bd p');
+        dateEle.html(new Date().toLocaleDateString());
+        $('.reject-date-picker').on('click', function() {
+            weui.datePicker({
+                start: new Date(), 
+                end: 2030,
+                defaultValue: [2020, 6, 9],
+                onChange: function(result){
+                    console.log(result);
+                },
+                onConfirm: function(dateList){
+                    console.log(dateList);
+                    var dateStr = '';
+                    dateList.forEach(function(item) {
+                        dateStr += (item.value.toString().length === 1 ? '0' + item.value : item.value) + '/';
+                    })
+                    dateStr = dateStr.substr(0, dateStr.length - 1)
+                    dateEle.html(dateStr);
+                },
+                id: 'datePicker'
+            });
+        })
+    };
+
+    // 设置驳回步骤
+    setRejectStep();
+    function setRejectStep() {
+        $('.reject-steps').on('click', function() {
+            weui.picker([
+                {
+                    label: '驳回步骤1',
+                    value: 0
+                },
+                {
+                    label: '驳回步骤2',
+                    value: 1
+                },
+                {
+                    label: '驳回步骤3',
+                    value: 3
+                },
+                {
+                    label: '驳回步骤4',
+                    value: 4,
+                }
+                ], {
+                className: 'custom-classname',
+                container: 'body',
+                defaultValue: [3],
+                onChange: function (result) {
+                    console.log(result)
+                },
+                onConfirm: function (result) {
+                    $('.reject-steps .weui-cell__ft').html(result[0].label)
+                },
+                id: 'singleLinePicker'
+            });
+        })
+    }
+</script>

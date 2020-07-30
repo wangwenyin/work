@@ -1,0 +1,161 @@
+.wrapper {
+  background-color: #ECECEC;
+}
+.wrapper header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0.9rem;
+  background: #8C4E7F;
+  z-index: 999;
+}
+.wrapper header h2 {
+  color: #fff;
+  font-size: 0.34rem;
+}
+.wrapper header .back {
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.18rem;
+  height: 0.32rem;
+  background: url(../images/arrow-right.png) no-repeat center / cover;
+}
+.wrapper .content {
+  margin-top: 0.9rem;
+  padding-bottom: 0.98rem;
+}
+.wrapper .content .top-info {
+  position: relative;
+  padding: 0.25rem 0.2rem;
+  padding-right: 25%;
+  background: #fff;
+}
+.wrapper .content .top-info .left-detail h3 {
+  color: #8C4E7F;
+  font-size: 0.32rem;
+}
+.wrapper .content .top-info .left-detail ul {
+  margin-top: 0.2rem;
+}
+.wrapper .content .top-info .left-detail ul li {
+  display: flex;
+  margin-top: 0.12rem;
+}
+.wrapper .content .top-info .left-detail ul li:first-child {
+  margin-top: 0;
+}
+.wrapper .content .top-info .left-detail ul li span:first-child {
+  width: 1.5rem;
+  text-align: right;
+  color: #999;
+}
+.wrapper .content .top-info .left-detail ul li span:last-child {
+  color: #333;
+}
+.wrapper .content .top-info.index {
+  padding-right: 0.2rem;
+}
+.wrapper .content .top-info .download-btn {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.2rem;
+  width: 1.7rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  padding-left: 0.56rem;
+  font-size: 0.22rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #8C4E7F;
+  background-image: url(../images/magazine.png);
+  background-repeat: no-repeat;
+  background-position: 0.22rem center;
+  background-size: 0.25rem 0.26rem;
+  border-radius: 0.3rem;
+}
+.wrapper .content .trend-box {
+  margin-top: 0.2rem;
+  background-color: #fff;
+}
+.wrapper .content .trend-box .chart-area {
+  padding: 0.25rem 0.2rem;
+}
+.wrapper .content .trend-box .chart-area h3 {
+  color: #333;
+  font-size: 0.3rem;
+}
+.wrapper .content .trend-box .chart-area .select-box {
+  display: flex;
+  align-items: center;
+}
+.wrapper .content .trend-box .chart-area .select-box .label {
+  color: #999;
+  margin-right: 0.25rem;
+}
+.wrapper .content .trend-box .chart-area .select-box .weui-cells {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  font-size: 0.3rem;
+  color: #666;
+}
+.wrapper .content .trend-box .chart-area .select-box .weui-cells .weui-cell {
+  height: 0.7rem;
+  padding: 0 0.15rem;
+  border: 1px solid #dddddd;
+}
+.wrapper .content .trend-box .chart-area .select-box .weui-cells .weui-cell .weui-cell__bd {
+  flex: auto;
+  text-align: center;
+}
+.wrapper .content .trend-box .chart-area .select-box .weui-cells .weui-cell .weui-cell__ft {
+  width: 0.23rem;
+  height: 0.13rem;
+  margin-left: 0.1rem;
+  background: url(../images/arrow-down.png) no-repeat center / cover;
+}
+.wrapper .content .trend-box .chart-area .select-box .weui-cells .weui-cell .weui-cell__ft::after {
+  display: none;
+}
+.wrapper .content .trend-box .chart-area .select-box .weui-cells .line {
+  width: 0.2rem;
+  height: 1px;
+  margin: 0 0.15rem;
+  background: #DDDDDD;
+}
+.wrapper .content .trend-box .chart-area .select-box .weui-cells::before,
+.wrapper .content .trend-box .chart-area .select-box .weui-cells::after {
+  display: none;
+}
+.wrapper .content .trend-box .chart-area .chart-box {
+  width: 100%;
+  height: 210px;
+}
+.wrapper .content .trend-box .table-area {
+  width: 100%;
+  margin-top: 0.3rem;
+  font-size: 0.28rem;
+  color: #333;
+}
+.wrapper .content .trend-box .table-area thead th {
+  height: 0.6rem;
+  background: #F0EAEF;
+  color: #666;
+  font-weight: normal;
+}
+.wrapper .content .trend-box .table-area tbody tr {
+  background-color: #fff;
+  border-bottom: 1px solid #DDDDDD;
+}
+.wrapper .content .trend-box .table-area tbody tr td {
+  height: 0.8rem;
+}
+.wrapper .content .trend-box .table-area tbody tr td:first-child {
+  color: #F3732E;
+}

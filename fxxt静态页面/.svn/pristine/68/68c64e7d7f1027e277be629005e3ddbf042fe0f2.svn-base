@@ -1,0 +1,6 @@
+#containner #content {
+  padding-bottom: 60px;
+}
+#containner #content .select-box {
+  margin-bottom: 20px;
+}

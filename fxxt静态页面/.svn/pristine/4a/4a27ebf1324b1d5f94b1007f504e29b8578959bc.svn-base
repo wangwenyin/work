@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/pagination.css">
+    <link rel="stylesheet" href="./css/price-info.css">
+    <link rel="stylesheet" href="lib/ztree/zTreeStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="containner">
+        <div class="header">
+            <div class="header-inner width_1200">
+                <div class="logo"><a href="#">深圳市建设工程造价指标数据应用平台</a></div>
+                <ul class="about-user">
+                    <li class="highlight"><a href="#login-modal" rel="modal:open">请登录</a></li>
+                    <li class="highlight"><a href="#">免费注册</a></li>
+                    <li>
+                        <a href="#">我的消息（0）</a>
+                        <div class="message">6</div>
+                    </li>
+                    <li><a href="#">用户中心</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul class="nav width_1200">
+                <li class="active"><a href="#">价格信息</a></li>
+                <li><a href="./cost-index.html">造价指数</a></li>
+            </ul>
+        </div>
+        <div class="breadcrumb width_1200">
+            当前位置：<a href="#" class="cur">价格信息</a><a href="#">深圳市2020年3月信息价 </a>
+        </div>
+        <div id="content" class="width_1200">
+            <div id="sidebar" class="sidebar">
+                <div class="title">专业分类</div>
+                <ul id="ztree" class="ztree"></ul>
+                <div id="toggle-btn" class="toggle-btn"></div>
+            </div>
+            <div class="main-content">
+                <div class="filter-box">
+                    <div class="title">
+                        <span>已选条件</span>
+                        <div id="toggle-btn" class="toggle-btn"></div>
+                    </div>
+                    <div class="filter-right">
+                        <ul class="filter-items">
+                            <li>黑色及有色金属</li>
+                            <li>玻璃制品</li>
+                        </ul>
+                        <div class="clear-all">清空已选条件</div>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <div class="left-bar">
+                        <div class="nper">
+                            <span class="nper-span">期数：</span>
+                            <ul class="nper-ul">
+                                <li class="nper-li-select"><span class="nper-select-txt"
+                                        periedcode="2f3d10ed-45dc-4c9a-8601-3bfb5a41c077"
+                                        title="广州市2018年12月信息价">广州市2018年12月信息价</span></li>
+                                <li class="nper-li-year">
+                                    <div class="nper-li-d">
+                                        <a class="nper-left nper-span"></a>
+                                        <div class="nper-li-d1">
+                                            <ul class="nper-ul-ul" id="infoPricePeriod" style="width: 500px;">
+                                                <li year="2010" style="display:block;" class="nper-ul-li"><a
+                                                        href="javascript:;" year="2010">2010</a></li>
+                                                <li year="2011" style="display:block;" class="nper-ul-li"><a
+                                                        href="javascript:;" year="2011">2011</a></li>
+                                                <li year="2012" style="display:block;" class="nper-ul-li"><a
+                                                        href="javascript:;" year="2012">2012</a></li>
+                                                <li year="2013" style="display:block;" class="nper-ul-li"><a
+                                                        href="javascript:;" year="2013">2013</a></li>
+                                                <li year="2014" style="display:block;" class="nper-ul-li"><a
+                                                        href="javascript:;" year="2014">2014</a></li>
+                                                <li year="2015" style="display:block;" class="nper-ul-li"><a
+                                                        href="javascript:;" year="2015">2015</a></li>
+                                                <li year="2016" style="display:block;" class="nper-ul-li"><a
+                                                        href="javascript:;" year="2016">2016</a></li>
+                                                <li year="2017" style="display:block;" class="nper-ul-li"><a
+                                                        href="javascript:;" year="2017">2017</a></li>
+                                                <li year="2018" style="display:block;" class="nper-ul-li"><a
+                                                        href="javascript:;" year="2018">2018</a></li>
+                                                <li year="2019" style="display:block;" class="nper-ul-li"><a
+                                                        href="javascript:;" year="2019">2019</a></li>
+                                                <li year="2020" style="display:block;" class="nper-ul-li"><a
+                                                        href="javascript:;" year="2020">2020</a></li>
+                                            </ul>
+                                        </div>
+                                        <a class="nper-right">&gt;</a>
+                                    </div>
+                                </li>
+                                <li class="nper-li-month">
+                                    <div class="nper-month-d" style="display: block;"><a href="javascript:;"
+                                            style="display:block;" idvalue="219845" title="广州市2020年4月信息价"
+                                            code="70d5c342-e6dc-4b30-ba6e-2c2b8ffa8156" year="2020" area=""
+                                            industry="001001">广州市2020年4月信息价</a><a href="javascript:;"
+                                            style="display:block;" idvalue="219615" title="广州市2020年3月信息价"
+                                            code="92698250-d5c1-4bbf-9483-44f7487907c9" year="2020" area=""
+                                            industry="001001">广州市2020年3月信息价</a><a href="javascript:;"
+                                            style="display:block;" idvalue="219526" title="广州市2020年2月信息价"
+                                            code="ce972a1a-f535-4e84-92f1-265d4e12b7c5" year="2020" area=""
+                                            industry="001001">广州市2020年2月信息价</a><a href="javascript:;"
+                                            style="display:block;" idvalue="219290" title="广州市2020年1月信息价"
+                                            code="c464066c-7944-4117-aa92-1efb6f1e87b5" year="2020" area=""
+                                            industry="001001">广州市2020年1月信息价</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search">
+                            <input type="text" placeholder="请输入材料名称或规格型号">
+                            <div class="search-btn"></div>
+                        </div>
+                    </div>
+                    <div class="right-bar">
+                        <a href="#" class="view">预览</a>
+                        <a href="#" class="download">下载</a>
+                    </div>
+                </div>
+                <div class="statement-box">
+                    <h2>深圳市2020年3月信息价</h2>
+                    <div id="statement" class="statement">
+                        <div class="content">
+                            编者声明：本价格信息是经过市场收集、调查、分析、整理完成的，包含了材料原价、材料运杂费、运输损耗费、采购及保管费和税金等运至施工现场指定点的各项费用，反映发布周期内的材料市场综合价格水平。本价格信息仅作为编制工程概预算、招标控制价等的计价参考，并非“政府定价”或者“政府指导价”。工程计价时，应综合考虑项目特点、品牌档需求等因素，结合市场实际合理确定相应材料设备的合同价、结算价的计价参并非编者声明：本价格信息是经过市场收集、调查、分析、整理完成的，包含了材料原价、材料运杂费、运输损耗费、采购及保管费和税金等运至施工现场指定点的各项费用，反映发布周期内的材料市场综合价格水平。本价格信息仅作为编制工程概预算、招标控制价等的计价参考，并非“政府定价”或者“政府指导价”。工程计价时，应综合考虑项目特点、品牌档需求等因素，结合市场实际合理确定相应材料设备的合同价、结算价的计价参并非
+                        </div>
+                        <div class="toggle"></div>
+                    </div>
+                </div>
+                <div class="table-box">
+                    <table class="common-table">
+                        <thead>
+                            <th>材料设备名称</th>
+                            <th>规格型号</th>
+                            <th>单位</th>
+                            <th>含税价（元)</th>
+                            <th>走势</th>
+                            <th>备注</th>
+                            <th>反馈</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="javascript::void(0)" class="name">圆钢(盘圆)(HPB300)</a></td>
+                                <td> φ6.5-10mm</td>
+                                <td>t</td>
+                                <td><a href="#" class="view">查看价格</a></td>
+                                <td><a href="#" class="trend"></a></td>
+                                <td></td>
+                                <td><a href="#" class="feedback"></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript::void(0)" class="name">圆钢(盘圆)(HPB300)</a></td>
+                                <td> φ6.5-10mm</td>
+                                <td>t</td>
+                                <td><a href="#" class="view">查看价格</a></td>
+                                <td><a href="#" class="trend"></a></td>
+                                <td></td>
+                                <td><a href="#" class="feedback"></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript::void(0)" class="name">圆钢(盘圆)(HPB300)</a></td>
+                                <td> φ6.5-10mm</td>
+                                <td>t</td>
+                                <td><a href="#" class="view">查看价格</a></td>
+                                <td><a href="#" class="trend"></a></td>
+                                <td></td>
+                                <td><a href="#" class="feedback"></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript::void(0)" class="name">圆钢(盘圆)(HPB300)</a></td>
+                                <td> φ6.5-10mm</td>
+                                <td>t</td>
+                                <td><a href="#" class="view">查看价格</a></td>
+                                <td><a href="#" class="trend"></a></td>
+                                <td></td>
+                                <td><a href="#" class="feedback"></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript::void(0)" class="name">圆钢(盘圆)(HPB300)</a></td>
+                                <td> φ6.5-10mm</td>
+                                <td>t</td>
+                                <td><a href="#" class="view">查看价格</a></td>
+                                <td><a href="#" class="trend"></a></td>
+                                <td></td>
+                                <td><a href="#" class="feedback"></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript::void(0)" class="name">圆钢(盘圆)(HPB300)</a></td>
+                                <td> φ6.5-10mm</td>
+                                <td>t</td>
+                                <td><a href="#" class="view">查看价格</a></td>
+                                <td><a href="#" class="trend"></a></td>
+                                <td></td>
+                                <td><a href="#" class="feedback"></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript::void(0)" class="name">圆钢(盘圆)(HPB300)</a></td>
+                                <td> φ6.5-10mm</td>
+                                <td>t</td>
+                                <td><a href="#" class="view">查看价格</a></td>
+                                <td><a href="#" class="trend"></a></td>
+                                <td></td>
+                                <td><a href="#" class="feedback"></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript::void(0)" class="name">圆钢(盘圆)(HPB300)</a></td>
+                                <td> φ6.5-10mm</td>
+                                <td>t</td>
+                                <td><a href="#" class="view">查看价格</a></td>
+                                <td><a href="#" class="trend"></a></td>
+                                <td></td>
+                                <td><a href="#" class="feedback"></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="page-box" id="pageTarget_all">
+                        <div class="total" style="display:inline;">当前显示
+                            <span class="color-red">
+                                <select class="select-styles">
+                                    <option value="10" selected="selected">10</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="40">40</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </span>条 共2751条数据</div>
+                        <div class="pages">
+                            <div id="Pagination">
+                                <div class="pagination"><a href="javascript:void(0);" class="current">1</a><a
+                                        href="javascript:void(0);">2</a><a href="javascript:void(0);">3</a><a
+                                        href="javascript:void(0);">4</a><a
+                                        href="javascript:void(0);">5</a><span>...</span><a
+                                        href="javascript:void(0);">275</a><a href="javascript:void(0);">276</a><a
+                                        class="next" href="javascript:void(0);">下一页</a></div>
+                            </div>
+                            <div class="searchPage">
+                                <span class="page-go">跳转到第
+                                    <input type="text" aria-label="页码输入框" id="gopagenum" name="gopagenum">页
+                                </span>
+                                <a class="j-Submit page-btn" href="javascript:void(0);">确认</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-inner">
+                <p>粤ICP备 15068125号 2019 深圳市建设工程造价管理站 版权所有</p>
+                <p style="margin-top: 10px;">技术支持：深圳市斯维尔科技股份有限公司</p>
+            </div>
+        </div>
+    </div>
+    <div id="login-modal" class="modal">
+        <h3>用户登录</h3>
+        <form action="#">
+            <div class="input-box phone-num">
+                <input type="text" placeholder="请输入手机号">
+                <div class="prefix-icon"></div>
+            </div>
+            <div class="input-box passpord">
+                <input type="text" placeholder="请输入验证码">
+                <div class="getcode">获取验证码</div>
+                <div class="prefix-icon"></div>
+            </div>
+            <div class="input-box">
+                <input class="auth-code-input" type="text" placeholder="请输入验证码">
+                <div class="auth-code"></div>
+            </div>
+            <div class="login-btn" rel="modal:close">登录</div>
+            <div class="others">
+                <a href="#">忘记密码？</a>
+                <a href="#" class="go-register">立即注册</a>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="lib/ztree/jquery.ztree.core-3.5.min.js"></script>
+<!-- 模态框文档地址：http://jquerymodal.com/ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script>
+    $(function () {
+        // 初始化树形控件
+        (function () {
+            var zTreeObj;
+            // zTree 的数据属性，深入使用请参考 http://www.treejs.cn/v3/api.php 文档（zTreeNode 节点数据详解）
+            var zNodes = [{
+                    name: "父节点1 - 展开",
+                    open: true,
+                    children: [{
+                            name: "父节点11",
+                            open: true,
+                            children: [{
+                                    name: "叶子节点111",
+                                    value: "22"
+                                },
+                                {
+                                    name: "叶子节点112"
+                                },
+                                {
+                                    name: "叶子节点113"
+                                },
+                                {
+                                    name: "叶子节点114"
+                                }
+                            ]
+                        },
+                        {
+                            name: "父节点12",
+                            children: [{
+                                    name: "叶子节点121"
+                                },
+                                {
+                                    name: "叶子节点122"
+                                },
+                                {
+                                    name: "叶子节点123"
+                                },
+                                {
+                                    name: "叶子节点124"
+                                }
+                            ]
+                        },
+                        {
+                            name: "父节点13 - 没有子节点",
+                            isParent: true
+                        }
+                    ]
+                },
+                {
+                    name: "父节点2",
+                    open: true,
+                    children: [{
+                            name: "父节点21 - 展开",
+                            open: true,
+                            children: [{
+                                    name: "叶子节点211"
+                                },
+                                {
+                                    name: "叶子节点212"
+                                },
+                                {
+                                    name: "叶子节点213"
+                                },
+                                {
+                                    name: "叶子节点214"
+                                }
+                            ]
+                        },
+                        {
+                            name: "父节点22 - 折叠",
+                            children: [{
+                                    name: "叶子节点221"
+                                },
+                                {
+                                    name: "叶子节点222"
+                                },
+                                {
+                                    name: "叶子节点223"
+                                },
+                                {
+                                    name: "叶子节点224"
+                                }
+                            ]
+                        },
+                        {
+                            name: "父节点23 - 折叠",
+                            children: [{
+                                    name: "叶子节点231"
+                                },
+                                {
+                                    name: "叶子节点232"
+                                },
+                                {
+                                    name: "叶子节点233"
+                                },
+                                {
+                                    name: "叶子节点234"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "父节点3 - 没有子节点",
+                    isParent: true
+                }
+
+            ];
+            // zTree 的参数配置，深入使用请参考 API 文档（setting 配置详解）
+            var setting = {
+                view: {
+                    showIcon: false
+                }
+            };
+            zTreeObj = $.fn.zTree.init($("#ztree"), setting, zNodes);
+        })();
+
+        // 树形控件展开收起
+        (function () {
+            var isExpand = true;
+            var sidebar = $('#sidebar');
+            var collapseBtn = $('.sidebar .toggle-btn');
+            var expandBtn = $('.filter-box .toggle-btn');
+
+            collapseBtn.click(function () {
+                sidebar.addClass('collapsed');
+                expandBtn.show();
+            })
+            expandBtn.click(function () {
+                sidebar.removeClass('collapsed');
+                expandBtn.hide();
+            })
+        })();
+
+        // 编者申明展示更多
+        (function () {
+            var content = $('#statement .content');
+            var toggleBtn = $('#statement .toggle');
+            var flag = false;
+
+            if (content.height() > 70) {
+                content.addClass('overflow');
+                toggleBtn.show();
+                toggleBtn.click(function () {
+                    content.toggleClass('overflow').toggleClass('auto');
+                    toggleBtn.toggleClass('collapsed');
+                })
+            } else {
+                content.removeClass('overflow');
+                toggleBtn.hide();
+            }
+        })();
+    })
+</script>
+
+
+</html>

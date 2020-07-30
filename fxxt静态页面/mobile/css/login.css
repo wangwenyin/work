@@ -1,0 +1,94 @@
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3.65rem;
+  background: url(../images/header-bg.png) no-repeat center / cover;
+}
+header h1 {
+  color: #fff;
+  font-size: 0.5rem;
+  padding-left: 1.05rem;
+  letter-spacing: 2px;
+}
+.login-box {
+  width: 85%;
+  margin: 0.95rem auto 0;
+  overflow: hidden;
+}
+.login-box .input-box {
+  position: relative;
+  margin-top: 0.54rem;
+}
+.login-box .input-box input {
+  width: 100%;
+  height: 0.66rem;
+  color: #333;
+  font-size: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 26%;
+  border-bottom: 1px solid #ccc;
+}
+.login-box .input-box .icon {
+  position: absolute;
+  left: 0.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.login-box .input-box .icon.user {
+  width: 0.44rem;
+  height: 0.42rem;
+  background-image: url(../images/user.png);
+}
+.login-box .input-box .icon.pwd {
+  left: 0.22rem;
+  width: 0.4rem;
+  height: 0.44rem;
+  background-image: url(../images/pwd.png);
+}
+.login-box .input-box .getcode {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26%;
+  height: 100%;
+  line-height: 0.66rem;
+  text-align: right;
+  color: #8C4E7F;
+}
+.login-box .input-box .getcode::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  width: 1px;
+  height: 0.28rem;
+  background: #ccc;
+}
+.login-box .login-btn {
+  height: 0.88rem;
+  margin-top: 0.8rem;
+  line-height: 0.88rem;
+  text-align: center;
+  font-size: 0.32rem;
+  font-weight: bold;
+  color: #fff;
+  background: #8c4e7f;
+  border-radius: 0.44rem;
+}
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0.68rem;
+  line-height: 0.68rem;
+  text-align: center;
+  font-size: 0.26rem;
+  font-weight: 500;
+  color: #707070;
+}
