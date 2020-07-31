@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<script>
+  // rem：设置根节点字体大小
+  var timer = null;
+  var minWidth = 1280;
+  setRootFontSize();
+  function setRootFontSize(){
+    var width = document.documentElement.clientWidth;
+    width = width > minWidth ? width : minWidth;
+    var styleN = document.createElement('style');
+    styleN.innerHTML = 'html{font-size:'+ width/19.2 +'px !important}';
+    document.head.appendChild(styleN);
+  };
+
+  window.addEventListener('resize', function() {
+    clearTimeout(timer);
+    timer = setTimeout(function() {
+      setRootFontSize()
+    }, 300)
+  })
+</script>
+<body>
+  <div class="wrapper">
+    <div>
+      <div class="header">
+        <div><span></span><span>21℃—28℃</span></div>
+        <div>实名劳务人数：&nbsp;<span>58</span>人</div>
+      </div>
+      <ul>
+        <li><span><i></i></span>深圳14号线进展情况汇报</li>
+        <li><span><i></i></span>落实实名制管理的通知</li>
+        <li><span><i></i></span>中铁南方投资集团有限公司领导到深圳14号线...</li>
+        <li><span><i></i></span>深圳地铁十四号线进展情况</li>
+        <li><span><i></i></span>落实实名制管理的通知</li>
+      </ul>
+      <div class="more">更多...</div>
+    </div>
+    <div>
+      <div class="title">GIS地图</div>
+    </div>
+    <div>
+      <div class="title">航拍</div>
+    </div>
+    <div>
+      <div class="title">工区产值进度排名</div>
+      <div class="yearbox">
+        <select>
+          <option value="2018年">2018年</option>
+          <option value="2017年">2017年</option>
+          <option value="2016年">2016年</option>
+          <option value="2015年">2015年</option>
+          <option value="2014年">2014年</option>
+          <option value="2013年">2013年</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <div class="title">形象进度</div>
+      <div id="echarts2"></div>
+    </div>
+    <div>
+      <div class="title">进度预警</div>
+      <div class="keyNode">
+        <div class="text">关键节点<br>工期预警</div>
+        <div class="nodeMap">
+          <div class="outer">
+            <div class="inner"></div>
+            <div class="point first"></div>
+            <div class="point second"></div>
+            <div class="point third"><div class="inner"></div></div>
+          </div>
+          <div class="date">
+            <div><span>2018.10.6</span><span>正式开工</span></div>
+            <div><span>2018.11.5</span><span>基坑开挖</span></div>
+            <div><span>2019.2.12</span><span>挖通隧道</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="pro-value">
+        <div>产值预警</div>
+        <div>
+          <p>XX工区截止本月应完成产值<span>210</span>万元，实际完成产值<span>160</span>万元。</p>
+          <p>XX工区截止本月应完成产值<span>210</span>万元，实际完成产值<span>160</span>万元。</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="title">工区绩效考核排名</div>
+    </div>
+    <div>
+      <div class="title">安全监测</div>
+    </div>
+    <div>
+      <div class="title">质量安全问题</div>
+      <div class="left">
+        <div id="echarts4"></div>
+        <div class="text">
+          <span>94%</span><br><span>质量问题处理率</span>
+        </div>
+      </div>
+      <div class="right">
+        <div id="echarts5"></div>
+        <div class="text">
+          <span>84%</span><br><span>安全问题处理率</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="title">产值进度比例</div>
+    </div>
+  </div>
+</body>
+</html>
+<script src="js_plugin/echarts.min.js"></script>
+<script>
+  window.onload = function() {
+    var echarts2 = echarts.init(document.getElementById('echarts2'))
+    var echarts4 = echarts.init(document.getElementById('echarts4'))
+    var echarts5 = echarts.init(document.getElementById('echarts5'))
+
+    var option2 = {
+      tooltip: {
+        trigger: 'item',
+        formatter: '{b}: {c}%'
+      },
+      grid: {
+        top: '25%',
+        left: '5%',
+        right: '5%',
+        bottom: '5%',
+        containLabel: true
+      },
+      xAxis: {
+        type: 'category',
+        data: ['桩基', '地连墙', '土方开挖', '主体结构砼', '附属结构'],
+        axisLine: {
+          lineStyle: {
+            type: 'dotted',
+            color: '#cbd3d9'
+          }
+        },
+        axisLabel: {
+          textStyle: {
+              color: '#fff'
+          }
+        },
+        axisTick: {
+          show: false
+        }
+      },
+      yAxis: {
+        type: 'value',
+        name: '完成率',
+        // max: 100,
+        // 轴线
+        axisLine: {
+          lineStyle: {
+            color: '#c6f7f1'
+          }
+        },
+        // 标签值
+        axisLabel: {
+          //设置y轴数值为%
+          formatter: '{value} %',
+          textStyle: {
+              color: '#e9f8ff'
+          }
+        },
+        // 刻度
+        axisTick: {
+          show: false
+        },
+        // 坐标轴的分割段数
+        splitNumber: 4,
+        // 分隔线
+        splitLine: {
+          lineStyle: {
+            type: 'dotted',
+            color: '#cbd3d9',
+            opacity: .8
+          }
+        }
+      },
+      series: [{
+        data: [22, 73, 45, 50, 32],
+        barWidth: 30,
+        type: 'bar',
+        itemStyle:{
+          normal:{
+            color: function(params) {
+              var colorList = ['#fbc11e', '#1e88e5', '#a1e51e', '#04c4ac', '#fd9c62'];
+              return colorList[params.dataIndex]
+            }
+          }
+        }
+      }],
+    }
+    var option4 = {
+      tooltip: {
+        trigger: 'item',
+        formatter: "{b}: {c} ({d}%)"
+      },
+      legend: {
+        orient: 'vertical',
+        bottom: 10,
+        itemWidth: 14,
+        itemHeight: 14,
+        borderRadius: 7,
+        data: ['已处理质量问题', '待处理质量问题'],
+        textStyle: {
+          color: '#fff',
+          fontSize: 12
+        }
+      },
+      color: ["#fbc11e", "#1e88e5"],
+      series: [
+        {
+          name:'质量问题',
+          type:'pie',
+          radius: ['45%', '65%'],
+          avoidLabelOverlap: false,
+          center: ['50%', '45%'],
+          label: {
+            normal: {
+              show: false,
+            }
+          },
+          labelLine: {
+            normal: {
+              show: false
+            }
+          },
+          data:[
+            {value: 74, name: '已处理质量问题'},
+            {value: 26, name: '待处理质量问题'}
+          ]
+        }
+      ]
+    }
+    var option5 = {
+      tooltip: {
+        trigger: 'item',
+        formatter: "{b}: {c} ({d}%)"
+      },
+      legend: {
+        orient: 'vertical',
+        bottom: 10,
+        itemWidth: 14,
+        itemHeight: 14,
+        icon: 'circle',
+        data: ['已处理安全问题', '待处理安全问题'],
+        textStyle: {
+          color: '#fff',
+          fontSize: 12
+        }
+      },
+      color: ["#fbc11e", "#1e88e5"],
+      series: [
+        {
+          name:'安全问题',
+          type:'pie',
+          radius: ['45%', '65%'],
+          avoidLabelOverlap: false,
+          center: ['50%', '45%'],
+          label: {
+            normal: {
+              show: false,
+            }
+          },
+          labelLine: {
+            normal: {
+              show: false
+            }
+          },
+          data:[
+            {value: 70, name: '已处理安全问题'},
+            {value: 30, name: '待处理安全问题'}
+          ]
+        }
+      ]
+    }
+
+    echarts2.setOption(option2)
+    echarts4.setOption(option4)
+    echarts5.setOption(option5);
+
+    // echarts自适应
+    (function() {
+      var timer = null
+      window.addEventListener('resize', function() {
+        clearTimeout(timer);
+        timer = setTimeout(function() {
+          echarts2.resize()
+          echarts4.resize()
+          echarts5.resize()
+        }, 300)
+      })
+    })()
+  }
+</script>

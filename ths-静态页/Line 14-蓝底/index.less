@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  color: #fff;
+  font-size: .18rem;
+  min-width: 1280px;
+  font-family: MicrosoftYaHei;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 1% 1% 0;
+  background-image: url(images/wrapper_bg.png);
+  overflow: hidden;
+  >div {
+    position: relative; 
+    float: left;
+    width: 32%;
+    height: 3.38rem;
+    margin: 1% 0 0 1%;
+    background-image: url(images/section_bg.png);
+    background-size: 100% 100%;
+    opacity: .9;
+    .title {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2.36rem;
+      height: .36rem;
+      line-height: .36rem;
+      text-align: center;
+      font-weight: bold;
+      color: #04ffff
+    }
+    &:nth-child(1) {
+      padding: .12rem .1rem;
+      background-image: url(images/section1_bg.png);
+      .header {
+        overflow: hidden;
+        div:first-child {
+          float: left;
+          span:first-child {
+            display: inline-block;
+            width: .24rem;
+            height: .24rem;
+            vertical-align: top;
+            background-image: url(images/weather.png);
+            background-size: cover
+          }
+          span:last-child {
+            margin-left: .1rem;
+            font-weight: bold
+          }
+        }
+        div:last-child {
+          float: right;
+          span {
+            color: #fd9c62;
+            font-size: .16rem;
+            font-weight: bold
+          }
+        }
+      }
+      ul {
+        margin-top: .1rem;
+        overflow: hidden;
+        li {
+          margin-top: .25rem;
+          cursor: pointer;
+          span {
+            position: relative;
+            display: inline-block;
+            width: .1rem;
+            height: .1rem;
+            margin-left: .07rem;
+            margin-right: .15rem;
+            border: solid 1px #3be0a8;
+            i {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate3d(-50%,-50%,0);
+              display: block;
+              width: .04rem;
+              height: .04rem;
+              background-color: #3be0a8;
+            }
+          }
+        }
+      }
+      .more {
+        position: absolute;
+        right: .1rem;
+        bottom: .12rem;
+        font-size: .16rem;
+        cursor: pointer;
+      }
+    }
+    &:nth-child(4) {
+      .yearbox {
+        position: absolute;
+        top: .3rem;
+        right: .25rem;
+        z-index: 99;
+        select {
+          width: 1.12rem;
+          height: .32rem;
+          border: none;
+          color: #fff;
+          background-color: #224ca8;
+          border-radius: 2px;
+        }
+      }
+    }
+    &:nth-child(5) {
+      #echarts2 {
+        height: 100%;
+      }
+    }
+    &:nth-child(6) {
+      padding: 0 .2rem;
+      font-size: .16rem;
+      .keyNode {
+        margin-top: .8rem;
+        overflow: hidden;
+        >div {
+          float: left;
+          width: 18%;
+        }
+        .nodeMap {
+          width: 82%;
+          margin-top: .1rem;
+          .outer {
+            position: relative;
+            width: 100%;
+            height: .06rem;
+            background-color: #4a61a6;
+            .inner {
+              width: 50%;
+              height: 100%;
+              background-color: #fd9c62;
+            }
+            .point {
+              position: absolute;
+              top: -0.05rem;
+              width: .16rem;
+              height: .16rem;
+              border-radius: 50%;
+              background-color: #fd9c62;
+            }
+            .first {
+              left: 0;
+            }
+            .second {
+              left: 50%;
+            }
+            .third {
+              position: absolute;
+              right: 0;
+              background-color: #4a61a6;
+              .inner {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: .06rem;
+                height: .06rem;
+                border-radius: 50%;
+                background-color: #33498b;
+              }
+            }
+          }
+          .date {
+            position: relative;
+            height: .5rem;
+            margin-top: .1rem;
+            font-size: 12px;
+            >div {
+              position: absolute;
+              text-align: center;
+              span {
+                display: block;
+              }
+              &:nth-child(1) {
+                left: -5%;
+              }
+              &:nth-child(2) {
+                left: 40%;
+              }
+              &:nth-child(3) {
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+      .pro-value {
+        margin-top: .5rem;
+        overflow: hidden;
+        >div {
+          float: left;
+          &:first-child {
+            width: 18%;
+          }
+          &:last-child {
+            width: 82%;
+            p {
+              margin-top: .1rem;
+              span {
+                font-size: .2rem;
+                &:last-child {
+                  color: #fd9c62;
+                }
+              }
+            }
+            p:first-child {
+              margin-top: 0
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(9) {
+      .left,.right {
+        position: relative;
+        float: left;
+        width: 50%;
+        height: 100%;
+        #echarts4, #echarts5 {
+          height: 100%;
+        }
+        .text {
+          position: absolute;
+          left: 50%;
+          top: 45%;
+          // 如加3d，参数需为整数（不然字体模糊）
+          transform: translate(-50%,-50%);
+          text-align: center;
+          span {
+            &:first-child {
+              color: #fd9c62;
+              font-size: .26rem;
+              font-weight: bold;
+            }
+            &:last-child {
+              color: #9bd0ff;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(10) {
+      width: 98%;
+      height: 4.08rem;
+      margin: 1%;
+      background-image: url(images/footer_bg.png)
+    }
+  }
+}
