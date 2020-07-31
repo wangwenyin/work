@@ -1,0 +1,39 @@
+公司svn账号：wangwenyin  wwy
+
+http://183.62.232.170:8088/c6/Jhsoft.Web.login/PassWord.aspx OA系统：wangweny wwy
+
+http://mail.thsware.com/accounts/login?system=mail 公司企业邮箱 wangweny  wang7466538yin
+
+http://www.thsware.com/FrontEndPlugin/WsBuild/Function 官网 智筑宣传页面
+
+http://zz.bimsvc.com/account/login 智筑云平台
+
+http://219.134.186.173:9103/Home/Main 工作量 wangwenyin 123
+
+研究院项目svn地址：https://219.134.186.173:2080/svn/yjy
+
+张博士邮箱
+ 284070184@qq.com xiang1515cas@163.com
+
+地图项目坐标查询：http://api.map.baidu.com/lbsapi/getpoint/index.html
+
+接口：https://www.eolinker.com/#/share/project/detail?groupID=84203&childGroupID=144466&grandSonGroupID=169703&apiID=611523&shareCode=J6rkjJ&shareToken=$2y$10$UUQV4RF.NX.GnV6.l.kdPOqTY3V.Bg82gkLzAWb1DRdgrIbHMiuyS&shareID=65330
+http://note.youdao.com/noteshare?id=437693ec0a43b3a90611cc7e8b002307&sub=731B749B5F0F47509A9AB159AB54E5E1 
+
+https://free.modao.cc/app/f5xFLndQcK2qC6nR87P6MqMwRC0riKx
+
+小程序AppSecret：052f18da98d2905d5edcaa7809b4ed11
+
+公司服务器ip：47.100.224.252 密码：THSware8866
+
+远程：172.17.0.46  用户名：cim 密码：7466538
+
+研究院项目新版本svn账号密码：wangwy/wangwy0215
+
+小程序功能图：http://naotu.baidu.com/file/c9b70bbb97c2d31bb4b48dba612a50c0?token=db21b9822158d037
+
+ftps数据库地址：219.134.186.170:9521
+
+广联达指标参考网：http://www.gldzb.com/
+
+绿景：http://202.105.146.194:11499/1
