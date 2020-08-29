@@ -1,39 +1,44 @@
-¹«Ë¾svnÕËºÅ£ºwangwenyin  wwy
+å…¬å¸svnè´¦å·ï¼šwangwenyin  wwy
 
-http://183.62.232.170:8088/c6/Jhsoft.Web.login/PassWord.aspx OAÏµÍ³£ºwangweny wwy
+http://183.62.232.170:8088/c6/Jhsoft.Web.login/PassWord.aspx OAç³»ç»Ÿï¼šwangweny wwy
 
-http://mail.thsware.com/accounts/login?system=mail ¹«Ë¾ÆóÒµÓÊÏä wangweny  wang7466538yin
+http://mail.thsware.com/accounts/login?system=mail å…¬å¸ä¼ä¸šé‚®ç®± wangweny  wang7466538yin
 
-http://www.thsware.com/FrontEndPlugin/WsBuild/Function ¹ÙÍø ÖÇÖşĞû´«Ò³Ãæ
+http://www.thsware.com/FrontEndPlugin/WsBuild/Function å®˜ç½‘ æ™ºç­‘å®£ä¼ é¡µé¢
 
-http://zz.bimsvc.com/account/login ÖÇÖşÔÆÆ½Ì¨
+http://zz.bimsvc.com/account/login æ™ºç­‘äº‘å¹³å°
 
-http://219.134.186.173:9103/Home/Main ¹¤×÷Á¿ wangwenyin 123
+http://219.134.186.173:9103/Home/Main å·¥ä½œé‡ wangwenyin 123
 
-ÑĞ¾¿ÔºÏîÄ¿svnµØÖ·£ºhttps://219.134.186.173:2080/svn/yjy
+ç ”ç©¶é™¢é¡¹ç›®svnåœ°å€ï¼šhttps://219.134.186.173:2080/svn/yjy
 
-ÕÅ²©Ê¿ÓÊÏä
+å¼ åšå£«é‚®ç®±
  284070184@qq.com xiang1515cas@163.com
 
-µØÍ¼ÏîÄ¿×ø±ê²éÑ¯£ºhttp://api.map.baidu.com/lbsapi/getpoint/index.html
+åœ°å›¾é¡¹ç›®åæ ‡æŸ¥è¯¢ï¼šhttp://api.map.baidu.com/lbsapi/getpoint/index.html
 
-½Ó¿Ú£ºhttps://www.eolinker.com/#/share/project/detail?groupID=84203&childGroupID=144466&grandSonGroupID=169703&apiID=611523&shareCode=J6rkjJ&shareToken=$2y$10$UUQV4RF.NX.GnV6.l.kdPOqTY3V.Bg82gkLzAWb1DRdgrIbHMiuyS&shareID=65330
+æ¥å£ï¼šhttps://www.eolinker.com/#/share/project/detail?groupID=84203&childGroupID=144466&grandSonGroupID=169703&apiID=611523&shareCode=J6rkjJ&shareToken=$2y$10$UUQV4RF.NX.GnV6.l.kdPOqTY3V.Bg82gkLzAWb1DRdgrIbHMiuyS&shareID=65330
 http://note.youdao.com/noteshare?id=437693ec0a43b3a90611cc7e8b002307&sub=731B749B5F0F47509A9AB159AB54E5E1 
 
 https://free.modao.cc/app/f5xFLndQcK2qC6nR87P6MqMwRC0riKx
 
-Ğ¡³ÌĞòAppSecret£º052f18da98d2905d5edcaa7809b4ed11
+å°ç¨‹åºAppSecretï¼š052f18da98d2905d5edcaa7809b4ed11
 
-¹«Ë¾·şÎñÆ÷ip£º47.100.224.252 ÃÜÂë£ºTHSware8866
+å…¬å¸æœåŠ¡å™¨ipï¼š47.100.224.252 å¯†ç ï¼šTHSware8866
 
-Ô¶³Ì£º172.17.0.46  ÓÃ»§Ãû£ºcim ÃÜÂë£º7466538
+è¿œç¨‹ï¼š172.17.0.46  ç”¨æˆ·åï¼šcim å¯†ç ï¼š7466538
 
-ÑĞ¾¿ÔºÏîÄ¿ĞÂ°æ±¾svnÕËºÅÃÜÂë£ºwangwy/wangwy0215
+ç ”ç©¶é™¢é¡¹ç›®æ–°ç‰ˆæœ¬svnè´¦å·å¯†ç ï¼šwangwy/wangwy0215
 
-Ğ¡³ÌĞò¹¦ÄÜÍ¼£ºhttp://naotu.baidu.com/file/c9b70bbb97c2d31bb4b48dba612a50c0?token=db21b9822158d037
+å°ç¨‹åºåŠŸèƒ½å›¾ï¼šhttp://naotu.baidu.com/file/c9b70bbb97c2d31bb4b48dba612a50c0?token=db21b9822158d037
 
-ftpsÊı¾İ¿âµØÖ·£º219.134.186.170:9521
+ftpsæ•°æ®åº“åœ°å€ï¼š219.134.186.170:9521
 
-¹ãÁª´ïÖ¸±ê²Î¿¼Íø£ºhttp://www.gldzb.com/
+å¹¿è”è¾¾æŒ‡æ ‡å‚è€ƒç½‘ï¼šhttp://www.gldzb.com/
 
-ÂÌ¾°£ºhttp://202.105.146.194:11499/1
+BIM5ï¼šhttps://5d.bimsvc.com
+æ™ºæ…§å·¥åœ°ï¼šhttp://ithing.bimsvc.com/#/passport/login
+æ™ºæ…§å·¥åœ°å’ŒBIM5dé—¨æˆ·ç½‘ç«™ï¼šhttp://ithing.bimsvc.com/homepage/index.html  http://5d.bimsvc.com/homepage/index.html
+å¤§æ•°æ®å¯è§†åŒ–é¡¹ç›®ï¼šhttp://202.105.146.194:11499/1
+å¾®ä¿¡å°ç¨‹åºï¼š1. ä¼šè®®å®¤ä¸å±•å…é¢„å®šç³»ç»Ÿ 2.å·¥ç¨‹è´¨é‡å®‰å…¨é€š
+ 
